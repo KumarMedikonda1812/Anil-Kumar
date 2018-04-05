@@ -21,13 +21,13 @@
     [super viewDidLoad];
     
     self.navigationItem.title = NSLocalizedStringFromTableInBundle(@"Summary", nil, [[Helper sharedInstance] getLocalBundle], nil);
-
+    
     [self setupNIB];
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"BackMore"] style:UIBarButtonItemStylePlain target:self action:@selector(backActionTop:)];
     backButton.tintColor = [Helper colorWithHexString:@"#FF304B"];
     self.navigationItem.leftBarButtonItem = backButton;
-
+    
     NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:@"summary"];
     NSDictionary *retrievedDictionary = [NSKeyedUnarchiver unarchiveObjectWithData:data];
     policyModel = [[PolicyModel alloc] init];
@@ -36,7 +36,7 @@
     NSDictionary *dicProductDetails = [[NSDictionary alloc] initWithDictionary:retrievedDictionary];
     
     NSString *apiLanguage = [[NSUserDefaults standardUserDefaults] objectForKey:@"ApiCurrentLanguage"];
-
+    
     if([apiLanguage isEqualToString:@"english"])
     {
         prodtnc = [NSString stringWithFormat:@"%@",[dicProductDetails objectForKey:@"prodtnc"]];
@@ -44,7 +44,7 @@
     {
         prodtnc = [NSString stringWithFormat:@"%@",[dicProductDetails objectForKey:@"cf_2443"]];
     }
-
+    
     arrTitle = @[@"Header",@"Price",@"Terms & Conditions"];
     
     summaryTableView.tableFooterView = [UIView new];
@@ -93,12 +93,12 @@
         //NSString *imgUrl = [NSString stringWithFormat:@"%@",[dicProductDetails objectForKey:@"imagename"]];
         //[cell.imgFeatures sd_setImageWithURL:[NSURL URLWithString:imgUrl] placeholderImage:[UIImage imageNamed:@"premium_plan"]];
         [cell.btnBack addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
-
+        
         cell.lblHeader.text = policyModel.planName;
         cell.clipsToBounds = YES;
         
         cell.lblDescription.text = policyModel.planDescriptions;
-
+        
         return cell;
         
     }
@@ -126,7 +126,7 @@
         [cell.bemCheckBoxThree addTarget:self action:@selector(ActionCheckboxThree:) forControlEvents:UIControlEventValueChanged];
         
         NSString *language = [[NSUserDefaults standardUserDefaults] objectForKey:@"CurrentLanguage"];
-
+        
         if([language isEqualToString:@"id"])
         {
             NSMutableAttributedString * string = [[NSMutableAttributedString alloc] initWithString:@"Saya mengerti dan setuju dengan syarat ketentuannya."];
@@ -140,7 +140,7 @@
             
             cell.lblTermsAndCondition.attributedText = string;
         }
-
+        
         cell.lblPrivacyPolicy.text = NSLocalizedStringFromTableInBundle(@"I understand that device purchase receipt is required upon submitting a claim.", nil, [[Helper sharedInstance] getLocalBundle], nil);
         //Saya mengerti bahwa, bukti pembelian asli dibutuhkan saat melakukan klaim
         cell.lblMobileTermsandCondition.text = NSLocalizedStringFromTableInBundle(@"I certify that all details I provide are true and correct.", nil, [[Helper sharedInstance] getLocalBundle], nil);
@@ -154,12 +154,12 @@
         tapGestureRecognizerTwo.numberOfTapsRequired = 1;
         [cell.lblPrivacyPolicy addGestureRecognizer:tapGestureRecognizerTwo];
         cell.lblPrivacyPolicy.userInteractionEnabled = YES;
-
+        
         UITapGestureRecognizer *tapGestureRecognizerThree = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(labelTappedThree)];
         tapGestureRecognizerThree.numberOfTapsRequired = 1;
         [cell.lblMobileTermsandCondition addGestureRecognizer:tapGestureRecognizerThree];
         cell.lblMobileTermsandCondition.userInteractionEnabled = YES;
-
+        
         
         return cell;
     }
@@ -245,7 +245,7 @@
         
     }];
     [alertView show];
-
+    
 }
 
 -(void)labelTapped
@@ -262,7 +262,7 @@
     termsViewController.strTitle = @"Privacy policy";
     termsViewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:termsViewController animated:YES];
-
+    
 }
 
 -(void)labelTappedThree
@@ -271,7 +271,7 @@
     termsViewController.strTitle = @"Terms of Use";//Terms of Use
     termsViewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:termsViewController animated:YES];
-
+    
 }
 
 -(void)purchasePolicy
@@ -284,7 +284,7 @@
     {
         [SVProgressHUD showWithStatus:@"20% Completed"];
     }
-
+    
     STHTTPRequest *response = [STHTTPRequest requestWithURLString:[NSString stringWithFormat:@"%@",BASEURL]];
     
     NSString *sessionName = [[NSUserDefaults standardUserDefaults] objectForKey:@"sessionID"];
@@ -292,7 +292,7 @@
     NSString *userDeviceCost = [[NSUserDefaults standardUserDefaults] objectForKey:@"userDeviceCost"];
     
     NSString *listPrice = [[NSUserDefaults standardUserDefaults] objectForKey:@"listPrice"];
-
+    
     NSNumberFormatter *myformatter = [NSNumberFormatter new];
     [myformatter setNumberStyle:NSNumberFormatterDecimalStyle];
     NSNumber *tempPrice = [myformatter numberFromString:listPrice];
@@ -300,16 +300,16 @@
     
     NSNumber *tempGadgetPrice = [myformatter numberFromString:userDeviceCost];
     NSString *finalUserDeviceCost = [tempGadgetPrice stringValue];
-
+    
     NSString *month = [[NSUserDefaults standardUserDefaults] objectForKey:@"month"];
     month = [month stringByReplacingOccurrencesOfString:@"/" withString:@"-"];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"MM-dd-yyyy"];
-
+    
     NSString *dateStr = [formatter stringFromDate:[NSDate date]];
     //price_inc_vat
     
-
+    
     bool renew = [[[NSUserDefaults standardUserDefaults] objectForKey:@"RENEW"] boolValue];
     
     if(renew)
@@ -326,7 +326,7 @@
     {
         dateStr = [formatter stringFromDate:[NSDate date]];
     }
-
+    
     NSDictionary *profile = [[NSUserDefaults standardUserDefaults] objectForKey:@"profile"];
     _strIMEI = [_strIMEI stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSDictionary *elementDictionary =@{
@@ -370,11 +370,11 @@
         
         NSData *data = [body dataUsingEncoding:NSUTF8StringEncoding];
         NSMutableDictionary* json = [NSJSONSerialization JSONObjectWithData:data
-                                                             options:kNilOptions
-                                                               error:&error];
+                                                                    options:kNilOptions
+                                                                      error:&error];
         
         json = [json replaceNullsWithObject:@"NA"];
-
+        
         @try {
             BOOL success = [[json objectForKey:@"success"] boolValue];
             NSString *failure = [[json objectForKey:@"result"] objectForKey:@"status"];
@@ -395,13 +395,13 @@
                         
                         message = NSLocalizedStringFromTableInBundle(@"Your account has an existing plan; you can only have 1 plan for every smartphone. Kindly view your existing plan or call 0804-1401-078 for assistance.", nil, [[Helper sharedInstance] getLocalBundle], nil);
                         btnTitle = @"View Plans";
-
+                        
                     }
                     else
                     {
                         btnTitle = @"Ok";
                     }
-
+                    
                     LGAlertView *alertView = [[LGAlertView alloc]initWithTitle:message message:@"" style:LGAlertViewStyleAlert buttonTitles:@[btnTitle] cancelButtonTitle:nil destructiveButtonTitle:nil actionHandler:^(LGAlertView * _Nonnull alertView, NSUInteger index, NSString * _Nullable title) {
                         
                         if([title isEqualToString:@"View Plans"])
@@ -505,16 +505,16 @@
         
         NSData *data = [body dataUsingEncoding:NSUTF8StringEncoding];
         NSMutableDictionary *json = [NSJSONSerialization JSONObjectWithData:data
-                                                             options:kNilOptions
-                                                               error:&error];
+                                                                    options:kNilOptions
+                                                                      error:&error];
         
         json = [json replaceNullsWithObject:@"NA"];
-
+        
         BOOL success = [[json objectForKey:@"success"] boolValue];
         NSString *failure = [[json objectForKey:@"result"] objectForKey:@"status"];
         
         NSLog(@"RESPONSE = %@",json);
-
+        
         if(success)
         {
             [SVProgressHUD dismiss];
@@ -713,7 +713,7 @@
     }
     NSDictionary *profileDetails = [[NSUserDefaults standardUserDefaults] objectForKey:@"profile"];
     NSLog(@"profile details = %@",profileDetails);
-
+    
     CGFloat deviceVersion = [[[UIDevice currentDevice] systemVersion] floatValue] ;
     NSDictionary *elementDictionary =@{@"country":countryName,
                                        @"user_id":customerID,
@@ -765,7 +765,7 @@
     
     AFHTTPRequestSerializer *serializer = [AFHTTPRequestSerializer serializer];
     
-
+    
     request=[serializer multipartFormRequestWithMethod:@"POST" URLString:@"https://admin.tecprotec.co/api/health_check" parameters:elementDictionary constructingBodyWithBlock:^(id<AFMultipartFormData> formData)
              {
                  [formData appendPartWithFileData:backCamera
@@ -827,11 +827,10 @@
     productId = referenecNumber;
     NSDictionary *dicProfile = [[NSUserDefaults standardUserDefaults] objectForKey:@"profile"];
     
-    NSString *strPrice = [dicData objectForKey:@"listprice"];
-    NSString *priceFloat = [strPrice stringByReplacingOccurrencesOfString:@"," withString:@""];
-    NSString *priceFloatWithZero = [NSString stringWithFormat:@"%@.00",priceFloat];
-
-//    NSString *priceFloat = @"10000";
+    //    NSString *strPrice = [dicData objectForKey:@"listprice"];
+    //    NSString *priceFloat = [strPrice stringByReplacingOccurrencesOfString:@"," withString:@""];
+    
+    NSString *priceFloat = @"10000";
     
     paymentSdk = [[Ipay alloc] init];
     paymentSdk.delegate = self;
@@ -840,9 +839,9 @@
     [payment setMerchantKey:@"EEUHfRqVtF"];//rxun22nL6A
     [payment setMerchantCode:@"ID00564"];//ID00401
     [payment setRefNo:referenecNumber];
-    [payment setAmount:priceFloatWithZero];
+    [payment setAmount:priceFloat];
     [payment setCurrency:@"IDR"];
-    [payment setProdDesc:[NSString stringWithFormat:@"Policy ID %@",referenecNumber]];
+    [payment setProdDesc:[NSString stringWithFormat:@"This is policy id = %@",referenecNumber]];
     [payment setUserName:[dicProfile objectForKey:@"firstname"]];
     [payment setUserEmail:[dicProfile objectForKey:@"email"]];
     [payment setUserContact:[dicProfile objectForKey:@"mobile"]];
@@ -883,8 +882,8 @@
     
     NSString *strText = NSLocalizedStringFromTableInBundle(@"Your payment was unsuccessful. Kindly try again or contact us at 0804-1401-078 for assistance", nil, [[Helper sharedInstance] getLocalBundle], nil);
     
-    successViewControllerLost.successMessage = [NSString stringWithFormat:@"%@",strText];
-//    successViewControllerLost.policyId = policyId;
+    successViewControllerLost.successMessage = strText;
+    successViewControllerLost.policyId = policyId;
     successViewControllerLost.success = NO;
     [self.navigationController pushViewController:successViewControllerLost animated:YES];
 }
@@ -898,9 +897,9 @@
     NSLog(@"paymentFailed errDesc = %@",errDesc);
     SuccessViewControllerLost *successViewControllerLost = [self.storyboard instantiateViewControllerWithIdentifier:@"SuccessViewControllerLost"];
     NSString *strText = NSLocalizedStringFromTableInBundle(@"Your payment was unsuccessful. Kindly try again or contact us at 0804-1401-078 for assistance", nil, [[Helper sharedInstance] getLocalBundle], nil);
-
-    successViewControllerLost.successMessage = [NSString stringWithFormat:@"%@",strText];
-//    successViewControllerLost.policyId = policyId;
+    
+    successViewControllerLost.successMessage = strText;
+    successViewControllerLost.policyId = policyId;
     successViewControllerLost.success = NO;
     
     [self.navigationController pushViewController:successViewControllerLost animated:YES];
@@ -937,7 +936,7 @@
 -(void)backAction:(id)sender
 {
     NSString *strText = NSLocalizedStringFromTableInBundle(@"Do you want to cancel the purchase?", nil, [[Helper sharedInstance] getLocalBundle], nil);
-
+    
     LGAlertView *alertView = [[LGAlertView alloc]initWithTitle:@"" message:strText style:LGAlertViewStyleAlert buttonTitles:@[@"Yes",@"Cancel"] cancelButtonTitle:nil destructiveButtonTitle:nil actionHandler:^(LGAlertView * _Nonnull alertView, NSUInteger index, NSString * _Nullable title) {
         if([title isEqualToString:@"Yes"])
         {
@@ -960,7 +959,7 @@
         
     }];
     [alertView show];
-
+    
 }
 
 -(void)ActionCheckbox:(id)sender
@@ -1008,3 +1007,4 @@
 }
 
 @end
+

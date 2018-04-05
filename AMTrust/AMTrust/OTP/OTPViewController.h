@@ -31,5 +31,6 @@
 
 @property  BOOL isPresentedModally;
 @property  BOOL isTablet;
+@property BOOL isFromLogin;
 
 @end

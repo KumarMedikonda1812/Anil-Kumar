@@ -71,6 +71,9 @@
     NSString *mobileNumber = [NSString stringWithFormat:@"%@",emailTextField.text];
     
     OTPViewController *otpViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"OTPViewController"];
+    if ([mobileNumber  isEqual: @""]) {
+        mobileNumber = [[NSUserDefaults standardUserDefaults] valueForKey:@"MOBILENUMBER"];
+    }
     otpViewController.mobileNumber = mobileNumber;
     otpViewController.isPresentedModally = YES;
     otpViewController.originScreen = @"Login";

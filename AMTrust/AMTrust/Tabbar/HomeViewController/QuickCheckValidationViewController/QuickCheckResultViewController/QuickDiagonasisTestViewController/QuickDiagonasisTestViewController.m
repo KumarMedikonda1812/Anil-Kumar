@@ -63,8 +63,8 @@
 typedef void (^TableRowBlock)();
 
 @interface QuickDiagonasisTestViewController () <DBCameraViewControllerDelegate>{
-NSDictionary *_actionMapping;
-
+    NSDictionary *_actionMapping;
+    
 }
 @end
 
@@ -189,7 +189,6 @@ NSDictionary *_actionMapping;
     {
         cell.lblHeader.text = NSLocalizedStringFromTableInBundle(@"Volume Test", nil, [[Helper sharedInstance] getLocalBundle], nil);
         cell.lblDetails.text = NSLocalizedStringFromTableInBundle(@"Increase volume up to maximum level using the buttons available on the sides.", nil, [[Helper sharedInstance] getLocalBundle], nil);
-        //[Helper popUpMessage:@"Now decrease your volume to minimum level" titleForPopUp:@"Note" view:self.view];
         if(volumeIncrease)
         {
             cell.checkBox.hidden = NO;
@@ -263,7 +262,7 @@ NSDictionary *_actionMapping;
     }
     else if (indexPath.row==4)
     {
-        cell.lblHeader.text = NSLocalizedStringFromTableInBundle(@"Front camera", nil, [[Helper sharedInstance] getLocalBundle], nil);
+        cell.lblHeader.text = NSLocalizedStringFromTableInBundle(@"front camera", nil, [[Helper sharedInstance] getLocalBundle], nil);
         
         cell.lblDetails.text = NSLocalizedStringFromTableInBundle(@"Press the camera icon  to open your front camera. We’ll take picture in a few seconds.", nil, [[Helper sharedInstance] getLocalBundle], nil);
         
@@ -276,14 +275,14 @@ NSDictionary *_actionMapping;
             [self timerMethod];
         }
         else
-        {
-            cell.secondImageView.image = [UIImage imageNamed:@"fourS"];
+        {            cell.secondImageView.image = [UIImage imageNamed:@"fourS"];
         }
         cell.testImageView.image = [UIImage imageNamed:@"four"];
+        
     }
     else if (indexPath.row==5)
     {
-        //
+        
         cell.lblHeader.text = NSLocalizedStringFromTableInBundle(@"Back camera", nil, [[Helper sharedInstance] getLocalBundle], nil);
         
         cell.lblDetails.text = NSLocalizedStringFromTableInBundle(@"Press the camera icon  to open your back camera. We’ll take picture in a few seconds.", nil, [[Helper sharedInstance] getLocalBundle], nil);
@@ -301,7 +300,6 @@ NSDictionary *_actionMapping;
             cell.testImageView.image = [UIImage imageNamed:@"five"];
         }
         cell.secondImageView.hidden = YES;
-        
     }
     else if (indexPath.row==6)
     {
@@ -314,7 +312,6 @@ NSDictionary *_actionMapping;
                 cell.checkBox.hidden = NO;
                 cell.checkBox.on = YES;
                 cell.secondImageView.hidden = YES;
-                
             }
             else
             {
@@ -322,14 +319,12 @@ NSDictionary *_actionMapping;
                 {
                     QuickCheckResultViewController *touchViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"QuickCheckResultViewController"];
                     [self.navigationController pushViewController:touchViewController animated:YES];
-                    
                 }
             }
             if(!tecExpert)
             {
                 [self timerMethod];
             }
-            
         }
         else
         {
@@ -476,45 +471,12 @@ NSDictionary *_actionMapping;
 
 - (void) openCamera
 {
-    /*
-     //If you want to customize the camera view, use initWithDelegate:cameraSettingsBlock:
-     
-     DBCameraContainerViewController *cameraContainer = [[DBCameraContainerViewController alloc] initWithDelegate:self cameraSettingsBlock:^(DBCameraView *cameraView, DBCameraContainerViewController *container) {
-     [cameraView.photoLibraryButton setHidden:YES]; //Hide Library button
-     
-     //Override the camera grid
-     DBCameraGridView *cameraGridView = [[DBCameraGridView alloc] initWithFrame:cameraView.previewLayer.frame];
-     [cameraGridView setNumberOfColumns:4];
-     [cameraGridView setNumberOfRows:4];
-     [cameraGridView setAlpha:0];
-     [container.cameraViewController setCameraGridView:cameraGridView];
-     [container.cameraViewController setUseCameraSegue:NO];
-     }];
-     
-     //Set the Tint Color and the Selected Color
-     [cameraContainer setTintColor:[UIColor redColor]];
-     [cameraContainer setSelectedTintColor:[UIColor yellowColor]];
-     */
-    
     
     DBCameraConfiguration *configuration = [[DBCameraConfiguration alloc] init];
     configuration.configureProcessingController = ^(UIViewController <DBPhotoProcessingControllerProtocol> * _Nonnull controller) {
-        
-        // You can hide cropButton on filter picking controller
-        // controller.cropButton.hidden = YES;
-        
-        // You can disable filter bar
-        // controller.filtersBarVisible = NO;
-        
     };
-    
     configuration.configureCameraController = ^(UIViewController < DBCameraControllerProtocol > * _Nonnull controller) {
-        
-        // You can configure initial camera orientation (front/back)
-        // controller.initialCameraPosition = AVCaptureDevicePositionFront;
-        
     };
-    
     DBCameraContainerViewController *cameraContainer = [[DBCameraContainerViewController alloc] initWithDelegate:self cameraConfiguration:configuration];
     [cameraContainer setFullScreenMode];
     
@@ -525,24 +487,18 @@ NSDictionary *_actionMapping;
 - (void) openCustomCamera
 {
     CustomCamera *camera = [CustomCamera initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    //  camera.cameraButton.removeFromSuperview;
-    
     [camera buildInterface];
     
     DemoNavigationController *nav = [[DemoNavigationController alloc] initWithRootViewController:[[DBCameraViewController alloc] initWithDelegate:self cameraView:camera]];
     [self presentViewController:nav animated:YES completion:nil];
 }
-
 - (void) openCameraWithoutSegue
 {
     DBCameraViewController *cameraController = [DBCameraViewController initWithDelegate:self];
     [cameraController setUseCameraSegue:NO];
-    //    [cameraController setLibraryMaxImageSize:1280]; //You can set a value for the maximum output resolution for the image selected from the Library
     DBCameraContainerViewController *container = [[DBCameraContainerViewController alloc] initWithDelegate:self];
     [container setCameraViewController:cameraController];
     [container setFullScreenMode];
-    
     DemoNavigationController *nav = [[DemoNavigationController alloc] initWithRootViewController:container];
     [self presentViewController:nav animated:YES completion:nil];
 }
@@ -569,9 +525,7 @@ NSDictionary *_actionMapping;
 - (void) openLibrary
 {
     DBCameraLibraryViewController *vc = [[DBCameraLibraryViewController alloc] init];
-    [vc setDelegate:self]; //DBCameraLibraryViewController must have a DBCameraViewControllerDelegate object
-    //    [vc setForceQuadCrop:YES]; //Optional
-    //    [vc setUseCameraSegue:YES]; //Optional
+    [vc setDelegate:self];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     [nav setNavigationBarHidden:YES];
     [self presentViewController:nav animated:YES completion:nil];
@@ -586,41 +540,37 @@ NSDictionary *_actionMapping;
 
 - (void) camera:(id)cameraViewController didFinishWithImage:(UIImage *)image withMetadata:(NSDictionary *)metadata
 {
-//        DetailViewController *detail = [[DetailViewController alloc] init];
-//        [detail setDetailImage:image];
-//        [self.navigationController pushViewController:detail animated:NO];
-//        [cameraViewController restoreFullScreenMode];
-        imgScreen = [metadata objectForKey:UIImagePickerControllerOriginalImage];
-        NSData *imageData = UIImageJPEGRepresentation(imgScreen, 0.5);
-        if(cameraSplit==4)
-        {
-            frontCamera = YES;
-            [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"frontCamera"];
-            [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:@"frontCameraImage"];
-            [[NSUserDefaults standardUserDefaults] synchronize];
-        }
-        else if (cameraSplit==7)
-        {
-            [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:@"crackScreenImage"];
-            screenCheckBool = YES;
-            [[NSUserDefaults standardUserDefaults] synchronize];
-            QuickCheckResultViewController *touchViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"QuickCheckResultViewController"];
-            [self.navigationController pushViewController:touchViewController animated:YES];
-        }
-        else
-        {
-            backCamera = YES;
-            [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"backCamera"];
-            [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:@"backCameraImage"];
-            [[NSUserDefaults standardUserDefaults] synchronize];
-            
-        }
+    imgScreen = [metadata objectForKey:UIImagePickerControllerOriginalImage];
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
+    if(cameraSplit==4)
+    {
+        frontCamera = YES;
+        [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"frontCamera"];
+        [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:@"frontCameraImage"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    else if (cameraSplit==7)
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:@"crackScreenImage"];
+        screenCheckBool = YES;
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        QuickCheckResultViewController *touchViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"QuickCheckResultViewController"];
+        [self.navigationController pushViewController:touchViewController animated:YES];
+    }
+    else
+    {
+        backCamera = YES;
+        [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"backCamera"];
+        [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:@"backCameraImage"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
         
-        [imagePicker dismissViewControllerAnimated:YES completion:nil];
-        [textCollectionView reloadData];
+    }
+    
+    [imagePicker dismissViewControllerAnimated:YES completion:nil];
+    [textCollectionView reloadData];
     
     [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
-
+    
 }
 
 -(IBAction)actionContinue:(id)sender
@@ -631,42 +581,21 @@ NSDictionary *_actionMapping;
     {
         if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
         {
-//            imagePicker.modalPresentationStyle = UIModalPresentationCurrentContext;
-//            [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
-//            if(btnCon.tag==4||btnCon.tag==7)
-//            {
-//                imagePicker.cameraDevice = UIImagePickerControllerCameraDeviceFront;
-//            }
-//            else
-//            {
-//                imagePicker.cameraDevice = UIImagePickerControllerCameraDeviceRear;
-//            }
-//            [imagePicker setDelegate:self];
-//
-//
-//            [self presentViewController:imagePicker animated:YES completion:nil];
             
             DBCameraConfiguration *configuration = [[DBCameraConfiguration alloc] init];
-            configuration.configureProcessingController = ^(UIViewController <DBPhotoProcessingControllerProtocol> * _Nonnull controller) {
-                
-                // You can hide cropButton on filter picking controller
-                 controller.cropButton.hidden = YES;
-                
-                // You can disable filter bar
-                 controller.filtersBarVisible = NO;
-                
+            configuration.configureProcessingController = ^(UIViewController <DBPhotoProcessingControllerProtocol> * _Nonnull controller)
+            {
+                controller.cropButton.hidden = YES;
+                controller.filtersBarVisible = NO;
             };
             
             configuration.configureCameraController = ^(UIViewController < DBCameraControllerProtocol > * _Nonnull controller) {
-                
-                // You can configure initial camera orientation (front/back)
-                
                 if(btnCon.tag==4||btnCon.tag==7){
-                    controller.initialCameraPosition = AVCaptureDevicePositionBack;
-
+                    controller.initialCameraPosition = AVCaptureDevicePositionFront;
+                    
                 }else{
                     controller.initialCameraPosition = AVCaptureDevicePositionBack;
-
+                    
                 }
             };
             
@@ -676,24 +605,8 @@ NSDictionary *_actionMapping;
             DemoNavigationController *nav = [[DemoNavigationController alloc] initWithRootViewController:cameraContainer];
             [self presentViewController:nav animated:YES completion:nil];
             
-//            CustomCamera *camera = [CustomCamera initWithFrame:[[UIScreen mainScreen] bounds]];
-//
-//            [camera buildInterface];
-//
-//            DBCameraViewController *dgcamera = [DBCameraViewController alloc];
-//            if(btnCon.tag==4||btnCon.tag==7){
-//
-//                dgcamera.initialCameraPosition = AVCaptureDevicePositionFront;
-//
-//
-//            }else{
-//                dgcamera.initialCameraPosition = AVCaptureDevicePositionFront;
-//            }
-//
-//            DemoNavigationController *nav = [[DemoNavigationController alloc] initWithRootViewController:[dgcamera initWithDelegate:self cameraView:camera]];
-//            [self presentViewController:nav animated:YES completion:nil];
             cameraSplit = btnCon.tag;
-            [self openCustomCamera];
+            [self openCamera];
             
         }else{
             UIAlertController * alert = [UIAlertController
@@ -774,7 +687,7 @@ NSDictionary *_actionMapping;
         if(success)
         {
             QuickCheckResultViewController *touchViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"QuickCheckResultViewController"];
-            [self.navigationController pushViewController:touchViewController animated:YES];   
+            [self.navigationController pushViewController:touchViewController animated:YES];
         }
     }
     if(success)
@@ -797,7 +710,7 @@ NSDictionary *_actionMapping;
         [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:@"frontCameraImage"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
-    else if (cameraSplit==7)
+    if (cameraSplit==7)
     {
         [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:@"crackScreenImage"];
         screenCheckBool = YES;
@@ -811,16 +724,14 @@ NSDictionary *_actionMapping;
         [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"backCamera"];
         [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:@"backCameraImage"];
         [[NSUserDefaults standardUserDefaults] synchronize];
-        
     }
     
     [imagePicker dismissViewControllerAnimated:YES completion:nil];
     [textCollectionView reloadData];
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end

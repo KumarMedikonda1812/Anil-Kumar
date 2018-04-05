@@ -15,6 +15,7 @@
 @implementation OTPViewController
 @synthesize isTablet;
 @synthesize isPresentedModally;
+@synthesize isFromLogin;
 @synthesize originScreen;
 @synthesize mobileNumber;
 
@@ -29,6 +30,11 @@
     resendLbl.userInteractionEnabled = YES;
     
     [self updateLanguage];
+    if ([originScreen  isEqual: @"Login"]) {
+        [self resendAction];
+
+    }
+    
 }
 
 -(void)updateLanguage

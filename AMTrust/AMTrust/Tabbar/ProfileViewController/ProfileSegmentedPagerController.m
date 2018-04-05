@@ -68,12 +68,16 @@
         NSString *imagePathStr = [profileDetails objectForKey:@"imagename"];
         NSString *fullPath = @"";
 
-        if([imagePathStr containsString:@"http://"])
+        if([imagePathStr containsString:@"https://"])
         {
             fullPath = imagePathStr;
         }else
         {
             fullPath = [NSString stringWithFormat:@"%@%@",BASEIMAGEURL,imagePathStr];
+            
+        }
+        if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"FBLOGIN"]  isEqual: @"YES"]) {
+            fullPath = [[NSUserDefaults standardUserDefaults ] objectForKey:@"FBPROFILEIMAGE"];
         }
         
         

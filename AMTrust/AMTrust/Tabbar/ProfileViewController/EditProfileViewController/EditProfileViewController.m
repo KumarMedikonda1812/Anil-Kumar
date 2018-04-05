@@ -52,7 +52,7 @@
     NSString *fbLogin = [[NSUserDefaults standardUserDefaults] objectForKey:@"FBLOGIN"];
     
     fbLoginCheck = [fbLogin boolValue];
-
+    
     [[Helper sharedInstance] trackingScreen:@"Editprofile_ios"];
 }
 
@@ -151,7 +151,7 @@
                     
                     [[NSUserDefaults standardUserDefaults] setObject:profileDetails forKey:@"profile"];
                     [[NSUserDefaults standardUserDefaults] synchronize];
-                   
+                    
                     if([check isEqualToString:@"OK"])
                     {
                         [self dismissViewControllerAnimated:YES completion:nil];
@@ -196,7 +196,7 @@
         [SVProgressHUD showWithStatus:@"updating profile.."];
         
         NSString *deviceName = @"IPHONE";
-
+        
         if([UIDevice currentDevice].userInterfaceIdiom==UIUserInterfaceIdiomPad){
             deviceName=@"IPAD";
         }
@@ -431,7 +431,7 @@
         }else{
             
             cell.profileTextField.tag = indexPath.row;
-
+            
             if(indexPath.row == 0)
             {
                 cell.profileTextField.placeholder = NSLocalizedStringFromTableInBundle(@"Address Line 1", nil, [[Helper sharedInstance] getLocalBundle], nil);
@@ -440,7 +440,7 @@
                     cell.profileTextField.text = @"";
                 else
                     cell.profileTextField.text =  addressStr;
-
+                
             }else if(indexPath.row == 1)
             {
                 cell.profileTextField.placeholder = NSLocalizedStringFromTableInBundle(@"Address Line 2", nil, [[Helper sharedInstance] getLocalBundle], nil);
@@ -479,7 +479,7 @@
             return 0.1;
         }
     }
-   
+    
     return 30;
 }
 
@@ -584,7 +584,7 @@
 }
 
 - (IBAction)takeBarButtonClick:(id)sender {
-   
+    
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
     {
         UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
@@ -640,6 +640,7 @@
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     profileChoosedImage = [info valueForKey:UIImagePickerControllerOriginalImage];
+    NSString*str = UIImagePickerControllerOriginalImage;
     urlString  = [info valueForKey:UIImagePickerControllerReferenceURL];
     [editProfileTableView reloadData];
     [picker dismissViewControllerAnimated:YES completion:nil];
@@ -767,3 +768,4 @@
 }
 
 @end
+

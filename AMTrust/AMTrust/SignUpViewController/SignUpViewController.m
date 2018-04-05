@@ -586,11 +586,12 @@
         {
             [[NSUserDefaults standardUserDefaults] setObject:@"YES" forKey:@"FBLOGIN"];
             password = @"facebook";
+            [[NSUserDefaults standardUserDefaults] setObject:[fbDic objectForKey:@"img"] forKey:@"FBPROFILEIMAGE"];
         }else
         {
             [[NSUserDefaults standardUserDefaults] setObject:@"NO" forKey:@"FBLOGIN"];
         }
-        
+
         [[NSUserDefaults standardUserDefaults] synchronize];
         
         NSDictionary *elementDictionary =@{@"firstname":firstNameTxtField.text,
@@ -652,6 +653,7 @@
                 {
                     if([status isEqualToString:@"success"])
                     {
+                        [[NSUserDefaults standardUserDefaults ] setValue:[NSString stringWithFormat:@"%@",mobileTxtField.text] forKey:@"MOBILENUMBER"];
                         [self redirectToOTP];
                     }
                     else
