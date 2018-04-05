@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TipsHeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="TipsHeaderCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zL1-8d-1IE">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="202"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diagnos" translatesAutoresizingMaskIntoConstraints="NO" id="rRq-Iy-eUD">
+                            <rect key="frame" x="10" y="51" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="LAz-G5-2Wg"/>
+                                <constraint firstAttribute="height" constant="100" id="kWe-3s-TzU"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perform a health check now and discover the condition of your device." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="x3f-Gl-2Al">
+                            <rect key="frame" x="120" y="51" width="190" height="56"/>
+                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rj3-xB-tXC">
+                            <rect key="frame" x="139.5" y="117" width="151" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BsG-mw-FeK"/>
+                            </constraints>
+                            <state key="normal" title=" Device Health Check ">
+                                <color key="titleColor" red="0.99116903540000001" green="0.20165288449999999" blue="0.30875778199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.90980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="rj3-xB-tXC" firstAttribute="top" secondItem="x3f-Gl-2Al" secondAttribute="bottom" constant="10" id="5OG-Ed-5a3"/>
+                        <constraint firstAttribute="trailing" secondItem="x3f-Gl-2Al" secondAttribute="trailing" constant="10" id="CEz-AG-sa1"/>
+                        <constraint firstItem="rRq-Iy-eUD" firstAttribute="centerY" secondItem="zL1-8d-1IE" secondAttribute="centerY" id="EtD-H8-tgg"/>
+                        <constraint firstItem="x3f-Gl-2Al" firstAttribute="leading" secondItem="rRq-Iy-eUD" secondAttribute="trailing" constant="10" id="Q46-yz-W0S"/>
+                        <constraint firstItem="rRq-Iy-eUD" firstAttribute="leading" secondItem="zL1-8d-1IE" secondAttribute="leading" constant="10" id="Zmg-AP-uih"/>
+                        <constraint firstItem="x3f-Gl-2Al" firstAttribute="top" secondItem="rRq-Iy-eUD" secondAttribute="top" id="eNB-9O-ATa"/>
+                        <constraint firstItem="rj3-xB-tXC" firstAttribute="centerX" secondItem="x3f-Gl-2Al" secondAttribute="centerX" id="msc-E9-OOW"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips for you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hA-ng-8D1">
+                    <rect key="frame" x="10" y="202" width="310" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="2RM-WV-Dz9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="zL1-8d-1IE" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="4L6-2x-Duo"/>
+                <constraint firstItem="8hA-ng-8D1" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="8wN-dV-Sec"/>
+                <constraint firstItem="zL1-8d-1IE" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="DPX-T3-3GZ"/>
+                <constraint firstItem="8hA-ng-8D1" firstAttribute="top" secondItem="zL1-8d-1IE" secondAttribute="bottom" id="IIi-Y0-Wkj"/>
+                <constraint firstAttribute="bottom" secondItem="8hA-ng-8D1" secondAttribute="bottom" id="SfM-BV-X4i"/>
+                <constraint firstAttribute="trailing" secondItem="8hA-ng-8D1" secondAttribute="trailing" id="eBS-1U-BZY"/>
+                <constraint firstAttribute="trailing" secondItem="zL1-8d-1IE" secondAttribute="trailing" id="gb1-Cp-HRH"/>
+            </constraints>
+            <connections>
+                <outlet property="btnDeviceHealth" destination="rj3-xB-tXC" id="hyA-XO-EyF"/>
+                <outlet property="lblHealthCheck" destination="x3f-Gl-2Al" id="PrA-Xa-sUN"/>
+                <outlet property="lblHeightConstraints" destination="2RM-WV-Dz9" id="TB3-e4-bZn"/>
+                <outlet property="lblTipsForYou" destination="8hA-ng-8D1" id="iAJ-vr-nSO"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="121.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="Diagnos" width="117" height="110"/>
+    </resources>
+</document>

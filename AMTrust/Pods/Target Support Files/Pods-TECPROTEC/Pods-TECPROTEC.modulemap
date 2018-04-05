@@ -1,0 +1,6 @@
+framework module Pods_TECPROTEC {
+  umbrella header "Pods-TECPROTEC-umbrella.h"
+
+  export *
+  module * { export * }
+}

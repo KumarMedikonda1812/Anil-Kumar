@@ -1,0 +1,15 @@
+[{
+ "header": "Protect Your Gadgets!",
+ "details": "We help you protect the things you love. Check out our plans.",
+ "image": "zero"
+ },
+ {
+ "header": "Mobile Health Check",
+ "details": "Is your phone not working? Running slow? Battery draining? Our mobile health check helps you to find faults & improve how your phone works.",
+ "image": "ones"
+ },
+ {
+ "header": "TecExpert",
+ "details": "For novices or tech geeks! Our TecExpert helps you with any tech problems, from setting up emails to backing up your data on the cloud.",
+ "image": "threes"
+ }]

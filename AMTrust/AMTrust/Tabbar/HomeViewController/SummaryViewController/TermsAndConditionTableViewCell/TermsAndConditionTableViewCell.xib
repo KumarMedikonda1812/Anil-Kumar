@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TermsAndConditionTableViewCell" rowHeight="147" id="KGk-i7-Jjw" customClass="TermsAndConditionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="146.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eua-5n-jNk" customClass="BEMCheckBox">
+                        <rect key="frame" x="20" y="18" width="30" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="3OA-uP-mmJ"/>
+                            <constraint firstAttribute="width" constant="30" id="TN7-60-Bgt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                <color key="value" red="0.99215686270000003" green="0.20000000000000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.99215686270000003" green="0.20000000000000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                <color key="value" red="0.99215686270000003" green="0.20000000000000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b51-Td-Uuc">
+                        <rect key="frame" x="60" y="16.5" width="242" height="33.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="I accept the ">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Terms and Conditions">
+                                <attributes>
+                                    <color key="NSColor" red="0.99116903540000001" green="0.20165288449999999" blue="0.31043963963888888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" of this plan">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dnd-da-NpF" customClass="BEMCheckBox">
+                        <rect key="frame" x="20" y="63" width="30" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="hQB-7E-7Rw"/>
+                            <constraint firstAttribute="height" constant="30" id="qsd-cg-YEI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                <color key="value" red="0.99215686270000003" green="0.20000000000000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.99215686270000003" green="0.20000000000000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                <color key="value" red="0.99215686270000003" green="0.20000000000000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnf-aL-F1I">
+                        <rect key="frame" x="60" y="62" width="241.5" height="33.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="I agree to the ">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Privacy Policy">
+                                <attributes>
+                                    <color key="NSColor" red="0.99116903540000001" green="0.20165288449999999" blue="0.31043963963888888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" of this app">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fK-kP-w4p" customClass="BEMCheckBox">
+                        <rect key="frame" x="20" y="108" width="30" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="VzY-hn-H17"/>
+                            <constraint firstAttribute="width" constant="30" id="x03-Rx-KpF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                <color key="value" red="0.99215686270000003" green="0.20000000000000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.99215686270000003" green="0.20000000000000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                <color key="value" red="0.99215686270000003" green="0.20000000000000001" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2K3-5G-F1I">
+                        <rect key="frame" x="60" y="107" width="242" height="33.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="I agree to the ">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Terms of Use">
+                                <attributes>
+                                    <color key="NSColor" red="0.99116903540000001" green="0.20165288449999999" blue="0.31043963963888888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" of this app">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="b51-Td-Uuc" firstAttribute="centerY" secondItem="eua-5n-jNk" secondAttribute="centerY" id="5If-Ja-jce"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fnf-aL-F1I" secondAttribute="trailing" constant="10.5" id="C3f-ni-FEW"/>
+                    <constraint firstItem="Fnf-aL-F1I" firstAttribute="centerY" secondItem="Dnd-da-NpF" secondAttribute="centerY" id="Cub-C0-Mrc"/>
+                    <constraint firstItem="eua-5n-jNk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="F1k-qZ-OvI"/>
+                    <constraint firstItem="2K3-5G-F1I" firstAttribute="leading" secondItem="4fK-kP-w4p" secondAttribute="trailing" constant="10" id="GsC-Dc-0Bo"/>
+                    <constraint firstItem="4fK-kP-w4p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="NKt-lc-GYn"/>
+                    <constraint firstItem="Dnd-da-NpF" firstAttribute="top" secondItem="eua-5n-jNk" secondAttribute="bottom" constant="15" id="O8T-ob-Uia"/>
+                    <constraint firstItem="Dnd-da-NpF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="U94-ZG-R0j"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="b51-Td-Uuc" secondAttribute="trailing" constant="10" id="k7K-kM-SAk"/>
+                    <constraint firstItem="eua-5n-jNk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="nRF-Rt-JTL"/>
+                    <constraint firstItem="Fnf-aL-F1I" firstAttribute="leading" secondItem="Dnd-da-NpF" secondAttribute="trailing" constant="10" id="nXS-SB-nWv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2K3-5G-F1I" secondAttribute="trailing" constant="10" id="qNn-e6-AUu"/>
+                    <constraint firstItem="2K3-5G-F1I" firstAttribute="centerY" secondItem="4fK-kP-w4p" secondAttribute="centerY" id="qNs-oU-sRI"/>
+                    <constraint firstItem="4fK-kP-w4p" firstAttribute="top" secondItem="Dnd-da-NpF" secondAttribute="bottom" constant="15" id="xce-Ta-WqW"/>
+                    <constraint firstItem="b51-Td-Uuc" firstAttribute="leading" secondItem="eua-5n-jNk" secondAttribute="trailing" constant="10" id="xqq-7t-hhi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bemCheckBox" destination="eua-5n-jNk" id="shv-ey-dy9"/>
+                <outlet property="bemCheckBoxThree" destination="4fK-kP-w4p" id="PjH-Kd-Jvq"/>
+                <outlet property="bemCheckBoxTwo" destination="Dnd-da-NpF" id="ohO-p8-uyk"/>
+                <outlet property="lblMobileTermsandCondition" destination="2K3-5G-F1I" id="h5x-hn-DUS"/>
+                <outlet property="lblPrivacyPolicy" destination="Fnf-aL-F1I" id="YDB-be-YTT"/>
+                <outlet property="lblTermsAndCondition" destination="b51-Td-Uuc" id="jtr-pa-any"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="209.5"/>
+        </tableViewCell>
+    </objects>
+</document>

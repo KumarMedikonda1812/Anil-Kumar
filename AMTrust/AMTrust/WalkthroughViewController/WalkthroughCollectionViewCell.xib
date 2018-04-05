@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WalkthroughCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cpi-Hk-3xi">
+                        <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="3du-Wx-bdM"/>
+                            <constraint firstAttribute="height" constant="200" id="dap-go-37i"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrG-No-G0u">
+                        <rect key="frame" x="20" y="209.5" width="335" height="19"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="al1-8U-Yhp">
+                        <rect key="frame" x="20" y="159.5" width="335" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="9Ml-eO-nQv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WrG-No-G0u" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="9HP-87-dEH"/>
+                <constraint firstAttribute="trailing" secondItem="al1-8U-Yhp" secondAttribute="trailing" constant="20" id="Bzf-WN-7KC"/>
+                <constraint firstItem="al1-8U-Yhp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="I70-mE-Duw"/>
+                <constraint firstItem="WrG-No-G0u" firstAttribute="top" secondItem="al1-8U-Yhp" secondAttribute="bottom" constant="10" id="Ne6-iv-fSS"/>
+                <constraint firstItem="cpi-Hk-3xi" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="QY4-wm-Kq0"/>
+                <constraint firstItem="cpi-Hk-3xi" firstAttribute="top" secondItem="WrG-No-G0u" secondAttribute="bottom" constant="5" id="dsk-ip-eL0"/>
+                <constraint firstAttribute="trailing" secondItem="WrG-No-G0u" secondAttribute="trailing" constant="20" id="izX-Gm-sQJ"/>
+                <constraint firstItem="cpi-Hk-3xi" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="p7q-PS-5J6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="269" height="506"/>
+            <connections>
+                <outlet property="walkthroughDetails" destination="WrG-No-G0u" id="ua3-He-1mN"/>
+                <outlet property="walkthroughHeader" destination="al1-8U-Yhp" id="oaD-KC-6XF"/>
+                <outlet property="walkthroughImageView" destination="cpi-Hk-3xi" id="K1G-8b-fme"/>
+            </connections>
+            <point key="canvasLocation" x="92" y="84"/>
+        </collectionViewCell>
+    </objects>
+</document>

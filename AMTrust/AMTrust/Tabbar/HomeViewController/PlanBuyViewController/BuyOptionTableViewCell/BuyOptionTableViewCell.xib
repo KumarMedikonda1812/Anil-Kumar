@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BuyOptionTableViewCell" rowHeight="183" id="KGk-i7-Jjw" customClass="BuyOptionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="182.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much did your device cost?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUU-Wu-oKS">
+                        <rect key="frame" x="20" y="21" width="280" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When did you buy your device?  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6I-gD-ri4">
+                        <rect key="frame" x="20" y="114.5" width="280" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gadget price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1no-4O-nQK" customClass="ACFloatingTextField">
+                        <rect key="frame" x="20" y="45.5" width="288" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="ArY-V1-z3o"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hul-bU-odp" customClass="ACFloatingTextField">
+                        <rect key="frame" x="20" y="141" width="288" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="8Gv-NV-GQp"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gadget price, this must match your receipt or claims will be declined" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVk-3h-IEA">
+                        <rect key="frame" x="20" y="81" width="282" height="23.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xVk-3h-IEA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="2kb-TJ-hgD"/>
+                    <constraint firstItem="MUU-Wu-oKS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="BAB-Kb-rI1"/>
+                    <constraint firstItem="MUU-Wu-oKS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="LYM-mp-Lw7"/>
+                    <constraint firstAttribute="trailing" secondItem="Hul-bU-odp" secondAttribute="trailing" constant="12" id="MkA-8c-UnD"/>
+                    <constraint firstItem="Hul-bU-odp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="NYl-RE-2My"/>
+                    <constraint firstItem="y6I-gD-ri4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="RRU-EZ-FaJ"/>
+                    <constraint firstItem="xVk-3h-IEA" firstAttribute="top" secondItem="1no-4O-nQK" secondAttribute="bottom" constant="0.10000000000000001" id="WEb-ls-whr"/>
+                    <constraint firstItem="Hul-bU-odp" firstAttribute="top" secondItem="y6I-gD-ri4" secondAttribute="bottom" constant="10" id="Ykq-wr-y5T"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="y6I-gD-ri4" secondAttribute="trailing" constant="4" id="jWe-sX-15I"/>
+                    <constraint firstItem="1no-4O-nQK" firstAttribute="leading" secondItem="MUU-Wu-oKS" secondAttribute="leading" id="nba-sQ-xsk"/>
+                    <constraint firstItem="y6I-gD-ri4" firstAttribute="top" secondItem="xVk-3h-IEA" secondAttribute="bottom" constant="10" id="oQz-kV-OCJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="MUU-Wu-oKS" secondAttribute="trailing" constant="4" id="pKe-hC-iVN"/>
+                    <constraint firstAttribute="trailing" secondItem="1no-4O-nQK" secondAttribute="trailing" constant="12" id="rui-WM-a36"/>
+                    <constraint firstItem="1no-4O-nQK" firstAttribute="top" secondItem="MUU-Wu-oKS" secondAttribute="bottom" constant="8" id="uXm-0j-Efw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xVk-3h-IEA" secondAttribute="trailing" constant="2" id="vlj-4r-7gE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="costLabel" destination="MUU-Wu-oKS" id="ahL-1F-OF0"/>
+                <outlet property="costTextField" destination="1no-4O-nQK" id="xT2-rt-TiP"/>
+                <outlet property="dateLabel" destination="y6I-gD-ri4" id="hA7-0C-4dY"/>
+                <outlet property="dateTextField" destination="Hul-bU-odp" id="O2j-Yh-dNV"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="111.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScrollTableViewCell" rowHeight="249" id="KGk-i7-Jjw" customClass="ScrollTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="249"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="248.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFZ-eg-bWT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="248.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </scrollView>
+                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pJv-zK-JcH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="248.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peace of mind" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-GM-W0x">
+                        <rect key="frame" x="16" y="191" width="288" height="20"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.99607843139999996" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="eRh-Fc-zWG">
+                        <rect key="frame" x="0.0" y="211.5" width="320" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="3t2-BX-Ijj"/>
+                        </constraints>
+                        <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="currentPageIndicatorTintColor" red="0.99916249509999999" green="0.13184580209999999" blue="0.43632400040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </pageControl>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eRh-Fc-zWG" secondAttribute="trailing" id="0GT-Cq-6Qh"/>
+                    <constraint firstItem="fyC-GM-W0x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="1MT-MB-b0A"/>
+                    <constraint firstItem="pJv-zK-JcH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2TT-d8-rIn"/>
+                    <constraint firstItem="eRh-Fc-zWG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4wF-l1-mPy"/>
+                    <constraint firstItem="JFZ-eg-bWT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6K1-lD-SiE"/>
+                    <constraint firstAttribute="bottom" secondItem="pJv-zK-JcH" secondAttribute="bottom" id="FB7-2f-OlS"/>
+                    <constraint firstAttribute="trailing" secondItem="pJv-zK-JcH" secondAttribute="trailing" id="L0p-as-99u"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fyC-GM-W0x" secondAttribute="trailing" id="Ot8-0v-5Vz"/>
+                    <constraint firstItem="pJv-zK-JcH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Sn9-al-qzO"/>
+                    <constraint firstAttribute="trailing" secondItem="JFZ-eg-bWT" secondAttribute="trailing" id="WFY-LS-hwb"/>
+                    <constraint firstAttribute="bottom" secondItem="eRh-Fc-zWG" secondAttribute="bottom" id="bBQ-Xf-aCe"/>
+                    <constraint firstItem="eRh-Fc-zWG" firstAttribute="top" secondItem="fyC-GM-W0x" secondAttribute="bottom" id="cLT-bu-N7G"/>
+                    <constraint firstItem="JFZ-eg-bWT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e86-uU-1O0"/>
+                    <constraint firstAttribute="bottom" secondItem="JFZ-eg-bWT" secondAttribute="bottom" id="y9q-vW-WYQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="fyC-GM-W0x" id="25o-g5-pPT"/>
+                <outlet property="imageScrollView" destination="JFZ-eg-bWT" id="lIv-Ws-nxq"/>
+                <outlet property="pageControl" destination="eRh-Fc-zWG" id="peb-oa-big"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="163.5"/>
+        </tableViewCell>
+    </objects>
+</document>

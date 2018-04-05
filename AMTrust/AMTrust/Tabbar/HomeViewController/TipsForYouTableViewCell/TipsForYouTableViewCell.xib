@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TipsForYouTableViewCell" rowHeight="197" id="KGk-i7-Jjw" customClass="TipsForYouTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNw-c6-Cyr">
+                        <rect key="frame" x="0.0" y="-0.5" width="320" height="200"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rRz-9s-UbU">
+                                <rect key="frame" x="20" y="0.0" width="300" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="z2i-D7-7cb"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YNL-Ez-qVw">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="KGk-i7-Jjw" id="qQf-eg-rd3"/>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="wsq-Z9-813"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rRz-9s-UbU" secondAttribute="bottom" id="HZs-ln-FLn"/>
+                            <constraint firstItem="rRz-9s-UbU" firstAttribute="top" secondItem="gNw-c6-Cyr" secondAttribute="top" id="L0q-VZ-UdY"/>
+                            <constraint firstItem="rRz-9s-UbU" firstAttribute="leading" secondItem="gNw-c6-Cyr" secondAttribute="leading" constant="20" id="T9J-W4-yhJ"/>
+                            <constraint firstAttribute="trailing" secondItem="rRz-9s-UbU" secondAttribute="trailing" id="aNV-RV-eMe"/>
+                            <constraint firstItem="rRz-9s-UbU" firstAttribute="top" secondItem="gNw-c6-Cyr" secondAttribute="top" id="dnl-ye-HUT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gNw-c6-Cyr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VxW-HV-MMr"/>
+                    <constraint firstAttribute="trailing" secondItem="gNw-c6-Cyr" secondAttribute="trailing" id="nVw-92-Mrj"/>
+                    <constraint firstAttribute="bottom" secondItem="gNw-c6-Cyr" secondAttribute="bottom" id="x1E-tv-TbJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tipsCollectionView" destination="rRz-9s-UbU" id="oWf-Kd-kI7"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="169"/>
+        </tableViewCell>
+    </objects>
+</document>

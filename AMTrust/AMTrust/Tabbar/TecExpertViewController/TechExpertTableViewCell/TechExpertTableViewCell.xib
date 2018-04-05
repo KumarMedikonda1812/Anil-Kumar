@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TechExpertTableViewCell" rowHeight="234" id="KGk-i7-Jjw" customClass="TechExpertTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eMt-c2-v8O">
+                        <rect key="frame" x="20" y="5" width="280" height="209.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYk-UI-wGr">
+                        <rect key="frame" x="20" y="214.5" width="280" height="19"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eMt-c2-v8O" secondAttribute="trailing" constant="20" id="87y-kZ-iT2"/>
+                    <constraint firstItem="eMt-c2-v8O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="GHe-sb-rqu"/>
+                    <constraint firstItem="rYk-UI-wGr" firstAttribute="top" secondItem="eMt-c2-v8O" secondAttribute="bottom" id="Ncr-8Q-3g7"/>
+                    <constraint firstItem="eMt-c2-v8O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Xxp-09-9fb"/>
+                    <constraint firstAttribute="trailing" secondItem="rYk-UI-wGr" secondAttribute="trailing" constant="20" id="bLN-AG-FMO"/>
+                    <constraint firstItem="rYk-UI-wGr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="eE1-0V-Jvj"/>
+                    <constraint firstItem="eMt-c2-v8O" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.7" id="ifO-GV-jrD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgTips" destination="eMt-c2-v8O" id="Bmo-1l-srR"/>
+                <outlet property="lblHeader" destination="rYk-UI-wGr" id="59m-lt-qSa"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="168"/>
+        </tableViewCell>
+    </objects>
+</document>

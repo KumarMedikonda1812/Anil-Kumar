@@ -1,0 +1,343 @@
+/*
+  Localisable.strings
+  TecProtec
+
+  Created by kishore kumar on 24/07/17.
+  Copyright © 2017 kishore kumar. All rights reserved.
+*/
+//profile
+"My Plans" = "My Plans";
+"My Claims" = "My Claims";
+"My Activities" = "My Activities";
+"Edit profile" = "Edit Profile";
+"Save" = "Save";
+"Profile" = "Profile";
+"Smartphone" = "Smartphone";
+"Tablet" = "Tablet";
+"Personal Details" = "Personal Details";
+"First and Last Name" = "First and Last Name";
+"First Name" = "First Name";
+"Last Name" = "Last Name";
+"Name" = "Name";
+"Email" = "Email";
+"Country Code" = "Country Code";
+"Country" = "Country";
+"Phone Number" = "Phone Number";
+"Mobile Number" = "Mobile Number";
+"Your plan does not exist" = "Your plan does not exist";
+
+"First name (required)" = "First name (required)";
+"Last name (required)" = "Last name (required)";
+"Mobile number (required)" = "Mobile number (required)";
+"Email (required)" = "Email (required)";
+"IMEI (required)" = "IMEI (required)";
+"Address line 1" = "Address line 1";
+"Address line 2" = "Address line 2";
+"Postal code" = "Postal code";
+"Password (required)" = "Password (required)";
+"Annual" = "Annual";
+"Choose your plan" = "Choose your plan";
+"Benefits" = "Benefits";
+"Proceed" = "Proceed";
+"Click to view Terms & Conditions" = "Click to view Terms & Conditions";
+"Create account with Facebook" = "Create account with Facebook";
+"Create account with mobile number" = "Create account with mobile number";
+"Proceed to pay" = "Proceed to pay";
+"Upload" = "Upload";
+"Submit" = "Submit";
+"Volume Test" = "Volume Test";
+"Mute test" = "Mute test";
+"Screen test" = "Screen test";
+
+"Login with facebook" = "Login with facebook";
+"Perform a health check now and discover the condition of your device." = "Perform a health check now and discover the condition of your device.";
+"Device Health Check" = "Device Health Check";
+"Help" = "Help";
+"Share with your friends" = "Share with your friends";
+"General information" = "General information";
+"Change password" = "Change password";
+"Current password" = "Current password";
+"New password" = "New password";
+"Confirm password" = "Confirm password";
+"Let’s check if your phone is working" = "Let’s check if your phone is working";
+"Before you proceed, please note that you’ll need access to a mirror and bank card/ payment details." = "Before you proceed, please note that you’ll need access to a mirror and bank card/ payment details.";
+"Switch on your device WiFi & Bluetooth" = "Switch on your device WiFi & Bluetooth";
+"You need a mirror to perform this test.  Place your device in front of a mirror with the screen facing the mirror and take a photo of the screen by pressing Continue." = "You need a mirror to perform this test.  Place your device in front of a mirror with the screen facing the mirror and take a photo of the screen by pressing Continue.";
+"You need your payment card or online bank details." = "You need your payment card or online bank details.";
+"Let's get started!" = "Let's get started!";
+"Increase volume up to maximum level using the buttons available on the sides." = "Increase volume up to maximum level using the buttons available on the sides.";
+"Decrease volume up to minimum level using the buttons available on the sides."="Decrease volume up to minimum level using the buttons available on the sides.";
+"Toggle button to mute and then press the “Test Now” button below"="Toggle button to mute and then press the “Test Now” button below";
+"Open Camera"="Open Camera";
+"Your WiFi connection has not been detected. Please check if your WiFi is turned on and connected to a working WiFi. You can see this in your device settings" = "Your WiFi connection has not been detected. Please check if your WiFi is turned on and connected to a working WiFi. You can see this in your device settings";
+"Your data connection has not been detected. Please check if your mobile data is turned on. You can find this in your device settings." = "Your data connection has not been detected. Please check if your mobile data is turned on. You can find this in your device settings.";
+"Your Bluetooth capability has not been detected. Please check if your Bluetooth is turned on. You can find this in your device settings." = "Your Bluetooth capability has not been detected. Please check if your Bluetooth is turned on. You can find this in your device settings.";
+"Your GPS has not been detected. Please check if your GPS setting is turned on. You can find this in your device settings." = "Your GPS has not been detected. Please check if your GPS setting is turned on. You can find this in your device settings.";
+"Your battery doesn’t seem to be in working condition." = "Your battery doesn’t seem to be in working condition.";
+"Your device gyroscope doesn’t seem to be working." = "Your device gyroscope doesn’t seem to be working.";
+"Great! Your smartphone is in good health and no faults found." = "Great! Your smartphone is in good health and no faults found.";
+"We found some problems with your smartphone. Check out our TecExpert for usability issues. Contact the manufacturer for warranty issues and TecProtec to know if it’s covered by your plan." = "We found some problems with your smartphone. Check out our TecExpert for usability issues. Contact the manufacturer for warranty issues and TecProtec to know if it’s covered by your plan.";
+"Your Purchase is successfull reference number is" = "Your Purchase is successfull reference number is";
+"Also please update your gadget invoice screenshot" = "Also please update your gadget invoice screenshot";
+"Peace of Mind" = "Peace of Mind";
+"Fast, Reliable Service" = "Fast, Reliable Service";
+"Protect your gadgets" = "Protect your gadgets";
+"Share with friends" = "Share with friends";
+"Save" = "Save";
+"Manage Password" =	"Manage Password";
+"Password" = "Password";
+"Confirm Password" = "Confirm Password";
+"Address Info" = "Address Info";
+"Address" = "Address";
+"City" = "City";
+"Done" = "Done";
+"Your Plans" = "Your Plans";
+"Home" = "Rumah";
+
+//login flow process//
+
+"Protect my gadget" = "Protect my gadget";
+"My gadget is protected" = "My gadget is protected";
+"Protect your gadgets today!" = "Protect your gadgets today!";
+"Terms of Service and Privacy Policy" =	"Terms of Service and Privacy Policy";
+"Further manual tests" = "Further manual tests";
+"Login" = "Login";
+"Login with Facebook" = "Login with Facebook";
+"Cancel" = "Cancel";
+"Welcome" =	"Welcome";
+"Create Account" = "Create Account";
+"User Info" = "User Info";
+"Make" = "Make";
+"Promo code" = "Promo code";
+"When did you buy your gadget?" = "When did you buy your gadget?";
+"How much did your gadget cost?"	= "How much did your gadget cost?";
+"Sign up with Facebook" = "Sign up with Facebook";
+"OR" = "OR";
+
+
+"Forgot password?" = "Forgot password?";
+"Email" = "Email";
+"Mobile" = "Mobile";
+"Sign up" =	"Sign up";
+
+//resend otp
+"Verify mobile Number"=	"Verify mobile Number";
+"Please enter the four digit verification code send to your registered mobile number" = "Please enter the 4 digit verification code send to your registered mobile number";
+"Didn't receive anything?" = "Didn't receive anything?";
+"Resend the code" =	"Resend the code";
+//app tour
+"Protect you gadgets!" = "Protect you gadgets!";
+"We help you protect the things you love. Check out our plans." = "We help you protect the things you love. Check out our plans.";
+"Mobile Health Check" = "Mobile Health Check";
+"Is your phone not working? Running slow?  Battery draining? Our mobile health check helps you to find faults & improve how your phone works." = "Is your phone not working? Running slow?  Battery draining? Our mobile health check helps you to find faults & improve how your phone works.";
+"TecExpert" ="TecExpert";
+"For novices or tech geeks! Our TecExpert helps you with any tech problems, from setting up emails to backing up your data on the cloud." = "For novices or tech geeks! Our TecExpert helps you with any tech problems, from setting up emails to backing up your data on the cloud.";
+"Exclusions" = "Exclusions";
+"Test now" = "Test now";
+
+//more
+"About us" = "About us";
+"App tour" = "App tour";
+"More" = "More";
+"Share to your friend" = "Share to your friend";
+"Invite your friends" = "Invite your friends";
+"Feedback to Us" = "Feedback to Us";
+"Rate our app" = "Rate our app";
+"Rate us" = "Rate us";
+"General Information" = "General Information";
+"Privacy policy" = "Privacy policy";
+"Terms of Use" = "Terms of Use";
+"Version" = "Version";
+"Logout" = "Logout";
+"General Information" = "General Information";
+
+//Home screen
+"Tips for you" = "Tips for you";
+"Expires on" = "Expires on";
+
+//product list
+"Theft" = "Theft";
+"Damage" = "Damage";
+"Liquid" = "Liquid";
+"Buy Now" = "Buy Now";
+"Monthly" = "Monthly";
+"Annual" = "Annual";
+"Minimum gadget cost should be Rp 1,000,000" = "Minimum gadget cost should be Rp 1,000,000";
+"Maximum gadget cost should be Rp 20,000,000" = "Maximum gadget cost should be Rp 20,000,000";
+
+//scan start screen
+"Let's Check your phone is working"	= "Let's Check your phone is working";
+"Start now" = "Start now";
+"We’ve all been there & dropped our precious gadgets, crossing our fingers it is still working and the screen isn’t cracked. Tecprotec membership plans offer the ultimate protection against accidental damage, liquid damage and theft, so you no longer need to worry about hefty repair costs or buying a new phone." = "We’ve all been there & dropped our precious gadgets, crossing our fingers it is still working and the screen isn’t cracked. Tecprotec membership plans offer the ultimate protection against accidental damage, liquid damage and theft, so you no longer need to worry about hefty repair costs or buying a new phone.";
+
+//Test screen
+"Device summary"="Device summary";
+"Further manual tests" = "Further manual tests";
+"Volume" = "Volume";
+"Mute" = "Mute";
+"Wifi" = "Wifi";
+"Data connection" = "Data connection";
+"Bluetooth"	="Bluetooth";
+"GPS" =	"GPS";
+"Battery" = "Battery";
+"Continue" = "Continue";
+"Gyroscope"	= "Gyroscope";
+
+"Volume test" =	"Volume test";
+"Screenshot" = "Screenshot";
+"Front camera" = "Front camera";
+"Back camera" =	"Back camera";
+"OK"="OK";
+"SORRY"="SORRY";
+"Great! Your smartphone is in good health and no faults found." = "Great! Your smartphone is in good health and no faults found.";
+"GREAT"= "GREAT";
+"Give us a moment, we’re doing further checks on your gadget." = "Give us a moment, we’re doing further checks on your gadget.";
+"We found some problems with your smartphone. Check out our TecExpert for usability issues. Contact the manufacturer for warranty issues and TecProtec to know if it’s covered by your plan." = "We found some problems with your smartphone. Check out our TecExpert for usability issues. Contact the manufacturer for warranty issues and TecProtec to know if it’s covered by your plan.";
+"You need a mirror to perform this test. Place your device in front of a mirror and press Continue." = "You need a mirror to perform this test. Place your device in front of a mirror and press Continue.";
+
+"Press the camera icon  to open your back camera. We’ll take picture in a few seconds." = "Press the camera icon  to open your back camera. We’ll take picture in a few seconds.";
+"Press the camera icon  to open your front camera. We’ll take picture in a few seconds." = "Press the camera icon  to open your front camera. We’ll take picture in a few seconds.";
+"Is your phone not working? Running slow? Battery draining? Our mobile health check helps you to find faults & improve how your phone works." = "Is your phone not working? Running slow? Battery draining? Our mobile health check helps you to find faults & improve how your phone works.";
+"Let’s check if your phone is working" = "Let’s check if your phone is working";
+
+//HELP
+"What is TecProtec?" = "What is TecProtec?";
+"What devices can be protected?" = "What devices can be protected?";
+"How much are the subscription fees for TecProtec protection?" = "How much are the subscription fees for TecProtec protection?";
+"Where can I find details of my plan?" = "Where can I find details of my plan?";
+"When does my plan expire?" = "When does my plan expire?";
+"How can I edit my profile photo?" = "How can I edit my profile photo?";
+"How do I check the status of my claim?" = "How do I check the status of my claim?";
+"How can I speak with someone?" = "How can I speak with someone?";
+
+"TecProtec provides membership plans that offer protection for your gadgets to ensure that you have an uninterrupted digital life. With TecProtec, your gadget gets protection for theft, accidental damage and liquid damage. You no longer need to worry about hefty repair costs or buying a new phone." = "TecProtec provides membership plans that offer protection for your gadgets to ensure that you have an uninterrupted digital life. With TecProtec, your gadget gets protection for theft, accidental damage and liquid damage. You no longer need to worry about hefty repair costs or buying a new phone.";
+"TecProtec provides protection for various gadgets that you can see under the ‘Home’ tab such as smartphone and tablet." = "TecProtec provides protection for various gadgets that you can see under the ‘Home’ tab such as smartphone and tablet.";
+"Subscription fees depend on the value of your gadget. You can check the exact value by going to the Home tab > pick a gadget to protect > key-in the value of your gadget and when you bought your gadget > pick payment between monthly and annual then you’ll see the exact subscription fee." = "Subscription fees depend on the value of your gadget. You can check the exact value by going to the Home tab > pick a gadget to protect > key-in the value of your gadget and when you bought your gadget > pick payment between monthly and annual then you’ll see the exact subscription fee.";
+"Simply tap the Profile button. Under My Plans, tap the plan you wish to know more about. All the details will be inside this screen. You need to be logged in to your account to see your plans." = "Simply tap the Profile button. Under My Plans, tap the plan you wish to know more about. All the details will be inside this screen. You need to be logged in to your account to see your plans.";
+"You can see the exact expiry date of your plan by tapping the Profile button. Under My Plans, tap the plan that you want to check and it will show you expiry date and more. You need to be logged in to your account to see your plans." = "You can see the exact expiry date of your plan by tapping the Profile button. Under My Plans, tap the plan that you want to check and it will show you expiry date and more. You need to be logged in to your account to see your plans.";
+"Tap the Profile button then click Edit Profile under the photo icon or your current photo. In the Edit Profile section, tap the camera icon, choose the source of your photo then pick your new photo. Tap ‘Save’ and your photo will be updated." = "Tap the Profile button then click Edit Profile under the photo icon or your current photo. In the Edit Profile section, tap the camera icon, choose the source of your photo then pick your new photo. Tap ‘Save’ and your photo will be updated.";
+"Tap the Profile button then select the plan that you want to make a claim for. Inside the plan, tap ‘Submit Claim’ and follow the steps." = "Tap the Profile button then select the plan that you want to make a claim for. Inside the plan, tap ‘Submit Claim’ and follow the steps.";
+"Tap the Profile button then tap ‘My Claims’. Inside this screen, you will see the plan and its status." = "Tap the Profile button then tap ‘My Claims’. Inside this screen, you will see the plan and its status.";
+"For our customers in Indonesia, you may call  0804-1401-078 or send an email to cs@amtrustmobilesolutions.co.id" = "For our customers in Indonesia, you may call  0804-1401-078 or send an email to cs@amtrustmobilesolutions.co.id";
+"Create Account with Mobile Number" = "Create account with mobile number";
+"Login with facebook" = "Login with facebook";
+"Create account with Facebook" = "Create account with Facebook";
+"Please enter your gadget cost" =  "Please enter your gadget cost";
+"Minimum gadget cost should be Rp 1,000,000" = "Minimum gadget cost should be Rp 1,000,000";
+"Maximum gadget cost should be Rp 20,000,000" = "Maximum gadget cost should be Rp 20,000,000";
+"Please select your plan" = "Please select your plan";
+"Please enter date of gadget purchase" = "Please enter date of gadget purchase";
+"Notification"  =  "Notification";
+"See all" =  "See all";
+"Policy details"  =  "Policy details";
+"Policy holder " =  "Policy holder";
+"package"  =  "package";
+"Status" = "Status";
+"Price"  =  "Price";
+"Expires on" = "Expires on";
+"Plan requirements" = "Plan requirements";
+"Screen photo"  =  "Screen photo";
+"Official Receipt" = "Official Receipt";
+"Submit a claim" = "Submit a claim";
+"Claim" = "Claim";
+"Cracked Screen" = "Cracked Screen";
+"Invite friends" =   "Invite friends";
+"Please enter your first name" = "Please enter your first name";
+"Please enter your last name" = "Please enter your last name";
+"Please enter your email address" = "Please enter your email address";
+"Please enter your imei number" = "Please enter your imei number";
+"Please enter your mobile number" = "Please enter your mobile number";
+"First name field is empty" = "First name field is empty";
+"Last name field is empty"  = "Last name field is empty";
+"Email address is missing" = "Email address is missing";
+"IMEI field is empty" = "IMEI field is empty";
+"Mobile number field is empty" = "Mobile number field is empty";
+"Make field is empty"  = "Make field is empty";
+"Choose country" = "Choose country";
+"choose language" = "choose language";
+"Change country / language" = "Change country / language";
+"Please choose language and country" = "Please choose language and country";
+"Please choose country and language" = "Please choose country and language";
+"Get your IMEI in Settings, select General and About. Or dial *#06#"  = "Get your IMEI in Settings, select General and About. Or dial *#06#";
+"Please enter all fields"  =  "Please enter all fields";
+"Fields are empty"  =  "Fields are empty";
+"Gadget price" =   "Gadget price";
+"Make" = "Make";
+"Proceed to summary"  =  "Proceed to summary";
+"Do you want to cancel the purchase ?" = "Do you want to cancel the purchase ?";
+"Yes" =  "Yes";
+"Required"   = "Required";
+"Per Day" = "Per Day";
+"Protect your gadgets against accidental damage, liquid damage and theft with the TecProtec app. It’s fast and easy! Download here http://onelink.to/zyku3p" = "Protect your gadgets against accidental damage, liquid damage and theft with the TecProtec app. It’s fast and easy! Download here http://onelink.to/zyku3p";
+
+"I understand and agree to the terms and conditions." = "I understand and agree to the terms and conditions.";
+"I understand that device purchase receipt is required upon submitting a claim." = "I understand that device purchase receipt is required upon submitting a claim.";
+"I certify that all details I provide are true and correct" = "I certify that all details I provide are true and correct.";
+
+"Your payment is successfully completed reference number is" = "Your payment is successfully completed reference number is";
+"Kindly upload your gadget proof of purchase for faster processing of claims in the future." = "Kindly upload your gadget proof of purchase for faster processing of claims in the future.";
+
+"Do you want to cancel the purchase?" = "Do you want to cancel the purchase?";
+"Submit a claim" = " Submit a claim ";
+"Package"="Package";
+"Upload" = " Upload ";
+"Plan Detail" = "Plan Detail";
+"Date" = "Date";
+"Plan" = "Plan";
+"User info"="User info";
+"Summary"="Summary";
+" Pay now " = " Pay now ";
+"Share to your friends" = "Share to your friends";
+"Rate us"="Rate us";
+"Date" = "Date";
+"Terms & Conditions" = "Terms & Conditions";
+"Hold on we are doing a few more checks" = "Hold on we are doing a few more checks";
+"Take a screenshot by pressing the home and power buttons at the same time" = "Take a screenshot by pressing the home and power buttons at the same time";
+"On the next screen, tap or swipe each grey square to test the touch surface" = "On the next screen, tap or swipe each grey square to test the touch surface";
+"Your volume is already maximum please reduce the volume and increase again" = "Your volume is already maximum please reduce the volume and increase again";
+"Please finish the screen test with in 10 seconds." = "Please finish the screen test with in 10 seconds.";
+"Take photo" = "Take photo";
+"Subscriber" = "Subscriber";
+"Proceed to summary" = "Proceed to summary";
+
+"Upload Invoice Receipt" = "Upload Invoice Receipt";
+"Your account has an existing plan; you can only have 1 plan for every smartphone. Kindly view your existing plan or call 0804-1401-078 for assistance." = "Your account has an existing plan; you can only have 1 plan for every smartphone. Kindly view your existing plan or call 0804-1401-078 for assistance.";
+
+"How much did your tablet cost?" = "How much did your tablet cost?";
+"When did you buy your tablet?" = "When did you buy your tablet?";
+"Tablet price" = "Tablet price";
+
+"Do you want to cancel your plan?" = "Do you want to cancel your plan?";
+"Yes cancel my plan" = "Yes cancel my plan";
+"Don't cancel my plan" = "Don't cancel my plan";
+
+"Email ID, mobile number and/or IMEI already exists. Please proceed to login." = "Email ID, mobile number and/or IMEI already exists. Please proceed to login.";
+"Protection details" = "Detail proteksi";
+"Choose from photo library" = "Choose from photo library";
+"Start now" = "Start now";
+"Per annum" = "Per annum";
+"Start" = "Start";
+"Connection to server failed. Please try again later." = "Connection to server failed. Please try again later.";
+
+//17-nov-17
+"Choose from photo library" = "Choose from photo library";
+"Do you want to cancel purchase?" = "Do you want to cancel purchase?";
+"Protection details" = "Protection details";
+"Verification Pending" = "Verification Pending";
+"I understand and agree to the terms and conditions." = "I understand and agree to the terms and conditions.";
+"Notification"="Notification";
+"No tips available for you" = "No tips available for you";
+"No notification available" = "No notification available";
+"For our customers in Indonesia, you may call  0804-1401-078 or send an email to cs@amtrustmobilesolutions.co.id" = "For our customers in Indonesia, you may call  0804-1401-078 or send an email to cs@amtrustmobilesolutions.co.id";
+"Disclaimer" = "Disclaimer";
+"You haven’t purchased a protection plan yet. To access the full features of TecExpert, choose a plan and protect your devices today." = "You haven’t purchased a protection plan yet. To access the full features of TecExpert, choose a plan and protect your devices today.";
+"Explore Plans" = "Explore Plans";
+"Please login to review the app" = "Please login to review the app";
+"No" = "No";
+"Please provide your rating" = "Please provide your rating";
+"Please enter your review" = "Please enter your review";
+"Must be 12 months or newer" = "Must be 12 months or newer";
+"Must be 18 months or newer" = "Must be 18 months or newer";
+"Sorry but your gadget is not eligible" = "Sorry but your gadget is not eligible";
+"Please agree to our conditions" = "Please agree to our conditions";
+"Gadget price, this must match your receipt or claims will be declined" = "Gadget price, this must match your receipt or claims will be declined";
