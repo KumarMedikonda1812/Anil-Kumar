@@ -1,4 +1,4 @@
-//
+
 //  PlanDetailViewController.m
 //  TECPROTEC
 //
@@ -7,8 +7,14 @@
 //
 
 #import "PlanDetailViewController.h"
-
-@interface PlanDetailViewController ()
+#import "DemoNavigationController.h"
+#import "DBCameraViewController.h"
+#import "DBCameraContainerViewController.h"
+#import "DBCameraLibraryViewController.h"
+#import "CustomCamera.h"
+#import "DBCameraGridView.h"
+#import "DBCameraConfiguration.h"
+@interface PlanDetailViewController ()<DBCameraViewControllerDelegate>
 
 @end
 
@@ -121,15 +127,15 @@
             }
             
             if(planModel.showPayNowButton){
-                [buttonArray addObject:@"Pay Now"];
+                [buttonArray addObject:NSLocalizedStringFromTableInBundle(@"Pay Now", nil, [[Helper sharedInstance] getLocalBundle], nil)];
             }
             
             if(planModel.showClaimButton){
-                [buttonArray addObject:@"Submit a claim"];
+                [buttonArray addObject:NSLocalizedStringFromTableInBundle(@"Submit a claim", nil, [[Helper sharedInstance] getLocalBundle], nil)];
             }
             
             if(planModel.showCancelButton){
-                [buttonArray addObject:@"Cancel"];
+                [buttonArray addObject:NSLocalizedStringFromTableInBundle(@"Cancel", nil, [[Helper sharedInstance] getLocalBundle], nil)];
             }
             
             [planTableView reloadData];
@@ -458,15 +464,16 @@
     headerView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     
     UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, self.view.frame.size.width, headerView.frame.size.height)];
+    
     if(section == 0)
     {
-        headerLabel.text = @"About Plan";
+        headerLabel.text = NSLocalizedStringFromTableInBundle(@"About plan", nil, [[Helper sharedInstance] getLocalBundle], nil);
     }else if(section == 1)
     {
-        headerLabel.text = @"Plan Requirements";
+        headerLabel.text = NSLocalizedStringFromTableInBundle(@"Plan Requirements", nil, [[Helper sharedInstance] getLocalBundle], nil);
     }else if(section == 2)
     {
-        headerLabel.text = @"Plan Action";
+        headerLabel.text = NSLocalizedStringFromTableInBundle(@"Plan Action", nil, [[Helper sharedInstance] getLocalBundle], nil);;
     }
 
     headerLabel.font = [UIFont boldSystemFontOfSize:14.0f];
@@ -572,12 +579,32 @@
 {
     invoiceReceipt = NO;
 
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-    [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
-    imagePicker.cameraDevice = UIImagePickerControllerCameraDeviceFront;
-    [imagePicker setDelegate:self];
-    imagePicker.allowsEditing = NO;
-    [self.navigationController presentViewController:imagePicker animated:YES completion:nil];
+//    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+//    [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+//    imagePicker.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+//    [imagePicker setDelegate:self];
+//    imagePicker.allowsEditing = NO;
+//    [self.navigationController presentViewController:imagePicker animated:YES completion:nil];
+    
+    
+    
+    DBCameraConfiguration *configuration = [[DBCameraConfiguration alloc] init];
+    configuration.configureProcessingController = ^(UIViewController <DBPhotoProcessingControllerProtocol> * _Nonnull controller)
+    {
+        controller.cropButton.hidden = YES;
+        controller.filtersBarVisible = NO;
+    };
+    
+    configuration.configureCameraController = ^(UIViewController < DBCameraControllerProtocol > * _Nonnull controller) {
+            controller.initialCameraPosition = AVCaptureDevicePositionFront;
+    };
+    
+    DBCameraContainerViewController *cameraContainer = [[DBCameraContainerViewController alloc] initWithDelegate:self cameraConfiguration:configuration];
+    [cameraContainer setFullScreenMode];
+    
+    DemoNavigationController *nav = [[DemoNavigationController alloc] initWithRootViewController:cameraContainer];
+    [self presentViewController:nav animated:YES completion:nil];
+    
 }
 
 - (IBAction)fileUploadAction:(id)sender {
@@ -1015,6 +1042,27 @@
                   }];
     
     [uploadTask resume];
+}
+#pragma mark - DBCameraViewControllerDelegate
+
+- (void) dismissCamera:(id)cameraViewController{
+    [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+    [cameraViewController restoreFullScreenMode];
+}
+
+- (void) camera:(id)cameraViewController didFinishWithImage:(UIImage *)image withMetadata:(NSDictionary *)metadata
+{
+    imgScreen = image;
+    if(invoiceReceipt)
+    {
+        [self createReceiptUploadServiceRequest];
+    }else
+    {
+        [self createCrackedScreenServiceRequest];
+    }
+    
+    [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 #pragma mark - Image Picker View

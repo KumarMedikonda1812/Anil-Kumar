@@ -827,8 +827,8 @@
     productId = referenecNumber;
     NSDictionary *dicProfile = [[NSUserDefaults standardUserDefaults] objectForKey:@"profile"];
     
-    //    NSString *strPrice = [dicData objectForKey:@"listprice"];
-    //    NSString *priceFloat = [strPrice stringByReplacingOccurrencesOfString:@"," withString:@""];
+        //NSString *strPrice = [dicData objectForKey:@"listprice"];
+       // NSString *priceFloat = [strPrice stringByReplacingOccurrencesOfString:@"," withString:@""];
     
     NSString *priceFloat = @"10000";
     

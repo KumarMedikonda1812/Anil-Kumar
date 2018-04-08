@@ -24,8 +24,8 @@
     MyPlansViewController *vc1;
     MyClaimsViewController *vc2;
     MyActivitiesViewController *vc3;
+    NSString *fullPath;
 }
     
-
     
 @end

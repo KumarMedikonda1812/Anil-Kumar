@@ -41,5 +41,7 @@
 
     NSURL *urlString;
 }
+-(void)sendImageValues:(NSString*)fbImage;
+
 
 @end

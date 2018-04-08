@@ -2,13 +2,18 @@
 	"My Plans" = "Proteksi saya";
 	"My Claims" = "Klaim saya";
 	"My Activities" = "Aktivitas saya";
+	"Plan Action" = "Rencana Aksi";
 	"Edit profile" = "Merubah profil";
 	Save = Simpan;
 	Profile = Profil;
+	"Forgot your password" = "Lupa password";
 	Smartphone = Ponsel;
 	Tablet = Tablet;
+	"Renew policy" = "Pembaruan polis";
 	"Personal details" = "Data diri";
+	Retake = "Ambil ulang";
 	"First and Last Name" = "Nama depan dan belakang";
+	Reject = Tolak;
 	"First Name" = "Nama depan";
 	"Last Name" = "Nama Belakang";
 	Name = Nama;
@@ -31,7 +36,7 @@
 	"Protect your gadgets" = "Lindungi gadget Anda sekarang!";
 	"Protect your gadgets today!" = "Lindungi gadget Anda sekarang!";
 	"Terms of Service and Privacy Policy" = "Syarat dan ketentuan yang berlaku";
-	"Waiting for payment\n" = "menunggu pembayaran";
+	"Waiting for payment" = "menunggu pembayaran";
 	Approved = Disetujui;
 	"not uploaded" = "tidak diunggah";
 	"Invalid credentials\n" = "Kredensial tidak valid\n";
@@ -42,6 +47,7 @@
 	Cancel = Batal;
 	Welcome = "Selamat datang";
 	"Create Account" = "Buat akun";
+	"About plan" = "Tentang rencana";
 	"User Info" = "Info pengguna";
 	Make = merek;
 	"Promo code" = "Kode promo";
@@ -75,7 +81,7 @@
 	"Create account with Facebook" = "membuat akun dengan Facebook";
 	"Create account with mobile number" = "membuat akun dengan nomor ponsel";
 	"Proceed to pay" = "Lanjut membayar";
-	" Pay now " = " Bayar sekarang ";
+	"Pay Now" = "Bayar sekarang";
 	"Rate us" = "Beri kami nilai";
 	Date = Tanggal;
 	"Terms & Conditions" = "Syarat dan ketentuan";
@@ -167,6 +173,7 @@
 	Mute = Sunyi;
 	Wifi = Wifi;
 	"Data Connection" = "Koneksi data";
+	Closed = tertutup;
 	Bluetooth = Bluetooth;
 	GPS = GPS;
 	Battery = Baterai;
@@ -291,8 +298,6 @@
 	"Must be 18 months or newer" = "masa pemakaian maksimum 18 bulan";
 	"Sorry but your gadget is not eligible" = "Maaf, gadget Anda tidak memenuhi syarat";
 	"Please agree to our conditions" = "Setujui kondisi kami";
-	"Approved\n" = Disetujui;
 	"Connection to server failed. Please try again later." = "Sambungan ke server gagal. Cobalah beberapa saat lagi.";
 	"Your payment was unsuccessful. Kindly try again or contact us at 0804-1401-078 for assistancesese" = "YoPembayaran Anda tidak berhasil Silakan coba lagi atau hubungi kami di 0804-1401-078 untuk bantuan";
-	"Waiting for payment" = "Waiting for payment";
 }

@@ -66,11 +66,12 @@
     {
         NSString *fullName = [NSString stringWithFormat:@"%@ %@",[profileDetails objectForKey:@"firstname"],[profileDetails objectForKey:@"lastname"]];
         NSString *imagePathStr = [profileDetails objectForKey:@"imagename"];
-        NSString *fullPath = @"";
+        fullPath = @"";
 
         if([imagePathStr containsString:@"https://"])
         {
             fullPath = imagePathStr;
+            
         }else
         {
             fullPath = [NSString stringWithFormat:@"%@%@",BASEIMAGEURL,imagePathStr];
@@ -96,6 +97,8 @@
 
 -(IBAction)btnEdit:(id)sender
 {
+    
+    
     NSDictionary *profileDetails = [[NSUserDefaults standardUserDefaults] objectForKey:@"profile"];
     
     if(profileDetails==nil)
@@ -106,7 +109,8 @@
     {
         EditProfileViewController *editProfileViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"EditProfileViewController"];
         editProfileViewController.hidesBottomBarWhenPushed=YES;
-        
+//        editProfileViewController = [EditProfileViewController new];
+//        [editProfileViewController sendImageValues:fullPath];
         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:editProfileViewController];
 
         [self.tabBarController presentViewController:navigationController animated:YES completion:nil];

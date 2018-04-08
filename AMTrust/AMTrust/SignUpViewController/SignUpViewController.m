@@ -653,7 +653,7 @@
                 {
                     if([status isEqualToString:@"success"])
                     {
-                        [[NSUserDefaults standardUserDefaults ] setValue:[NSString stringWithFormat:@"%@",mobileTxtField.text] forKey:@"MOBILENUMBER"];
+//                        [[NSUserDefaults standardUserDefaults ] setValue:[NSString stringWithFormat:@"%@",mobileTxtField.text] forKey:@"MOBILENUMBER"];
                         [self redirectToOTP];
                     }
                     else

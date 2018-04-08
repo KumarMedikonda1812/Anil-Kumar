@@ -30,11 +30,10 @@
     resendLbl.userInteractionEnabled = YES;
     
     [self updateLanguage];
-    if ([originScreen  isEqual: @"Login"]) {
-        [self resendAction];
+////   if ([originScreen  isEqual: @"Login"]) {
+//        [self resendAction];
+//    }
 
-    }
-    
 }
 
 -(void)updateLanguage

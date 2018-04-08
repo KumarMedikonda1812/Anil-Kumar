@@ -57,13 +57,7 @@
 
 @end
 
-#define kCellIdentifier @"CellIdentifier"
-#define kCameraTitles @[ @"Open Camera", @"Open Custom Camera", @"Open Camera without Segue", @"Open Camera without Container", @"Camera with force quad crop", @"Open Library Picker" ]
-
-typedef void (^TableRowBlock)();
-
 @interface QuickDiagonasisTestViewController () <DBCameraViewControllerDelegate>{
-    NSDictionary *_actionMapping;
     
 }
 @end
@@ -71,21 +65,8 @@ typedef void (^TableRowBlock)();
 @implementation QuickDiagonasisTestViewController
 @synthesize textCollectionView,pageController,btnContinue,btnCancel;
 
-- (id) init
-{
-    self = [super init];
-    
-    if ( self ) {
-        _actionMapping = @{ @0:^{ [self openCustomCamera]; }, @1:^{ [self openCustomCamera]; },
-                            @2:^{ [self openCameraWithoutSegue]; }, @3:^{ [self openCameraWithoutContainer]; },
-                            @4:^{ [self openCameraWithForceQuad]; }, @5:^{ [self openLibrary]; } };
-    }
-    
-    return self;
-}
 
 - (void)viewDidLoad {
-    // Do any additional setup after loading the view.
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_7_0
     [self setEdgesForExtendedLayout:UIRectEdgeNone];
 #endif
@@ -262,7 +243,7 @@ typedef void (^TableRowBlock)();
     }
     else if (indexPath.row==4)
     {
-        cell.lblHeader.text = NSLocalizedStringFromTableInBundle(@"front camera", nil, [[Helper sharedInstance] getLocalBundle], nil);
+        cell.lblHeader.text = NSLocalizedStringFromTableInBundle(@"Front camera", nil, [[Helper sharedInstance] getLocalBundle], nil);
         
         cell.lblDetails.text = NSLocalizedStringFromTableInBundle(@"Press the camera icon  to open your front camera. We’ll take picture in a few seconds.", nil, [[Helper sharedInstance] getLocalBundle], nil);
         
@@ -275,9 +256,10 @@ typedef void (^TableRowBlock)();
             [self timerMethod];
         }
         else
-        {            cell.secondImageView.image = [UIImage imageNamed:@"fourS"];
+        {
+            cell.secondImageView.image = [UIImage imageNamed:@"fourS"];
         }
-        cell.testImageView.image = [UIImage imageNamed:@"four"];
+            cell.testImageView.image = [UIImage imageNamed:@"four"];
         
     }
     else if (indexPath.row==5)
@@ -467,69 +449,6 @@ typedef void (^TableRowBlock)();
 }
 
 
-#pragma mark - Camera Actions
-
-- (void) openCamera
-{
-    
-    DBCameraConfiguration *configuration = [[DBCameraConfiguration alloc] init];
-    configuration.configureProcessingController = ^(UIViewController <DBPhotoProcessingControllerProtocol> * _Nonnull controller) {
-    };
-    configuration.configureCameraController = ^(UIViewController < DBCameraControllerProtocol > * _Nonnull controller) {
-    };
-    DBCameraContainerViewController *cameraContainer = [[DBCameraContainerViewController alloc] initWithDelegate:self cameraConfiguration:configuration];
-    [cameraContainer setFullScreenMode];
-    
-    DemoNavigationController *nav = [[DemoNavigationController alloc] initWithRootViewController:cameraContainer];
-    [self presentViewController:nav animated:YES completion:nil];
-}
-
-- (void) openCustomCamera
-{
-    CustomCamera *camera = [CustomCamera initWithFrame:[[UIScreen mainScreen] bounds]];
-    [camera buildInterface];
-    
-    DemoNavigationController *nav = [[DemoNavigationController alloc] initWithRootViewController:[[DBCameraViewController alloc] initWithDelegate:self cameraView:camera]];
-    [self presentViewController:nav animated:YES completion:nil];
-}
-- (void) openCameraWithoutSegue
-{
-    DBCameraViewController *cameraController = [DBCameraViewController initWithDelegate:self];
-    [cameraController setUseCameraSegue:NO];
-    DBCameraContainerViewController *container = [[DBCameraContainerViewController alloc] initWithDelegate:self];
-    [container setCameraViewController:cameraController];
-    [container setFullScreenMode];
-    DemoNavigationController *nav = [[DemoNavigationController alloc] initWithRootViewController:container];
-    [self presentViewController:nav animated:YES completion:nil];
-}
-
-- (void) openCameraWithForceQuad
-{
-    DBCameraViewController *cameraController = [DBCameraViewController initWithDelegate:self];
-    [cameraController setForceQuadCrop:YES];
-    
-    DBCameraContainerViewController *container = [[DBCameraContainerViewController alloc] initWithDelegate:self];
-    [container setCameraViewController:cameraController];
-    [container setFullScreenMode];
-    
-    DemoNavigationController *nav = [[DemoNavigationController alloc] initWithRootViewController:container];
-    [self presentViewController:nav animated:YES completion:nil];
-}
-
-- (void) openCameraWithoutContainer
-{
-    DemoNavigationController *nav = [[DemoNavigationController alloc] initWithRootViewController:[DBCameraViewController initWithDelegate:self]];
-    [self presentViewController:nav animated:YES completion:nil];
-}
-
-- (void) openLibrary
-{
-    DBCameraLibraryViewController *vc = [[DBCameraLibraryViewController alloc] init];
-    [vc setDelegate:self];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    [nav setNavigationBarHidden:YES];
-    [self presentViewController:nav animated:YES completion:nil];
-}
 
 #pragma mark - DBCameraViewControllerDelegate
 
@@ -606,7 +525,7 @@ typedef void (^TableRowBlock)();
             [self presentViewController:nav animated:YES completion:nil];
             
             cameraSplit = btnCon.tag;
-            [self openCamera];
+           // [self openCamera];
             
         }else{
             UIAlertController * alert = [UIAlertController

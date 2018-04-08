@@ -9,7 +9,12 @@
 #import "EditProfileViewController.h"
 
 @interface EditProfileViewController ()
-
+{
+    NSString *imageUrl;
+    NSString*fbimages;
+    
+    
+}
 @end
 
 @implementation EditProfileViewController
@@ -23,6 +28,14 @@
     backButton.tintColor = [Helper colorWithHexString:@"#FF304B"];
     
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle: NSLocalizedStringFromTableInBundle(@"Save", nil, [[Helper sharedInstance] getLocalBundle], nil) style:UIBarButtonItemStylePlain target:self action:@selector(saveAction:)];
+    
+    
+        
+        if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"FBLOGIN"]  isEqual: @"YES"]) {
+            imageUrl = [[NSUserDefaults standardUserDefaults ] objectForKey:@"FBPROFILEIMAGE"];
+        }
+
+    
     
     rightButton.tintColor = [Helper colorWithHexString:@"#FF304B"];
     
@@ -360,12 +373,21 @@
             cell = [[ImageTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ImageTableViewCell"];
         }
         [cell.btnCamera addTarget:self action:@selector(ActionProfileImage:) forControlEvents:UIControlEventTouchUpInside];
-        NSString *imageUrl = [profileDetails objectForKey:@"imagename"];
+         imageUrl = [profileDetails objectForKey:@"imagename"];
         
         if(profileChoosedImage != nil)
         {
             cell.profileImageView.image = profileChoosedImage;
+//            cell.profileImageView.image = fbimages;
+            
+        
         }else{
+          
+            if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"FBLOGIN"]  isEqual: @"YES"] && [imageUrl  isEqual: @"No Picture Uploaded"]) {
+                
+                imageUrl = [[NSUserDefaults standardUserDefaults] objectForKey:@"FBPROFILEIMAGE"];
+            }
+           
             [cell.profileImageView sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"manPlaceholder"]];
         }
         return cell;
@@ -464,6 +486,10 @@
     }
 }
 
+//-(void)sendImageValues:(NSString*)fbImage
+//{
+//    fbimages = fbImage;
+//}
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     if(section==0)

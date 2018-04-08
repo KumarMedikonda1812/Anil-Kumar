@@ -17,6 +17,7 @@
 #import "DetailedHomeViewController.h"
 
 @interface PlanDetailViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,CommonRequestDelegate,PaymentResultDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+
 {
     IBOutlet UITableView *planTableView;
     
@@ -31,6 +32,8 @@
 
     BOOL invoiceReceipt;
     UIImage *imgScreen;
+    BOOL FrontCamera;
+
 
 }
 
