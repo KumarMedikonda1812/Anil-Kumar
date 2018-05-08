@@ -31,39 +31,39 @@
 		030F09451F1DF1D000EB4FE7 /* SuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030F09441F1DF1D000EB4FE7 /* SuccessViewController.m */; };
 		0327AFDC1EEE6B74009F3191 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0327AFDB1EEE6B74009F3191 /* AVFoundation.framework */; };
 		0327AFDF1EEE879C009F3191 /* StartQuickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0327AFDE1EEE879C009F3191 /* StartQuickViewController.m */; };
-		032DA0922069372E00D22CE2 /* Valencia.acv in Resources */ = {isa = PBXBuildFile; fileRef = 032DA04C2069372D00D22CE2 /* Valencia.acv */; };
-		032DA0932069372E00D22CE2 /* Vignette.acv in Resources */ = {isa = PBXBuildFile; fileRef = 032DA04D2069372D00D22CE2 /* Vignette.acv */; };
-		032DA0942069372E00D22CE2 /* Nashville.acv in Resources */ = {isa = PBXBuildFile; fileRef = 032DA04E2069372D00D22CE2 /* Nashville.acv */; };
-		032DA0952069372E00D22CE2 /* GrayscaleContrastFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA04F2069372D00D22CE2 /* GrayscaleContrastFilter.m */; };
-		032DA0962069372E00D22CE2 /* Hudson.acv in Resources */ = {isa = PBXBuildFile; fileRef = 032DA0502069372D00D22CE2 /* Hudson.acv */; };
-		032DA0972069372E00D22CE2 /* amaro.acv in Resources */ = {isa = PBXBuildFile; fileRef = 032DA0512069372D00D22CE2 /* amaro.acv */; };
-		032DA0982069372E00D22CE2 /* 1977.acv in Resources */ = {isa = PBXBuildFile; fileRef = 032DA0522069372D00D22CE2 /* 1977.acv */; };
-		032DA0992069372E00D22CE2 /* mayfair.acv in Resources */ = {isa = PBXBuildFile; fileRef = 032DA0532069372D00D22CE2 /* mayfair.acv */; };
-		032DA09A2069372E00D22CE2 /* DBCamera.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 032DA0562069372D00D22CE2 /* DBCamera.bundle */; };
-		032DA09B2069372E00D22CE2 /* DBCameraImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032DA0582069372D00D22CE2 /* DBCameraImages.xcassets */; };
-		032DA09C2069372E00D22CE2 /* DBLibraryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA05B2069372D00D22CE2 /* DBLibraryManager.m */; };
-		032DA09D2069372E00D22CE2 /* DBCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA05C2069372D00D22CE2 /* DBCameraManager.m */; };
-		032DA09E2069372E00D22CE2 /* DBCameraConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0612069372D00D22CE2 /* DBCameraConfiguration.m */; };
-		032DA09F2069372E00D22CE2 /* DBCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0622069372D00D22CE2 /* DBCollectionViewFlowLayout.m */; };
-		032DA0A02069372E00D22CE2 /* DBCameraFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0632069372D00D22CE2 /* DBCameraFilterCell.m */; };
-		032DA0A12069372E00D22CE2 /* DBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0642069372D00D22CE2 /* DBCollectionViewCell.m */; };
-		032DA0A22069372E00D22CE2 /* DBMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0662069372D00D22CE2 /* DBMotionManager.m */; };
-		032DA0A32069372E00D22CE2 /* DBCameraContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA06F2069372D00D22CE2 /* DBCameraContainerViewController.m */; };
-		032DA0A42069372E00D22CE2 /* DBCameraCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0712069372D00D22CE2 /* DBCameraCollectionViewController.m */; };
-		032DA0A52069372E00D22CE2 /* DBCameraLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0752069372D00D22CE2 /* DBCameraLibraryViewController.m */; };
-		032DA0A62069372E00D22CE2 /* DBCameraSegueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0782069372D00D22CE2 /* DBCameraSegueViewController.m */; };
-		032DA0A72069372E00D22CE2 /* DBCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0792069372D00D22CE2 /* DBCameraViewController.m */; };
-		032DA0A82069372E00D22CE2 /* DBCameraBaseCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA07A2069372D00D22CE2 /* DBCameraBaseCropViewController.m */; };
-		032DA0A92069372E00D22CE2 /* DBCameraFiltersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA07C2069372D00D22CE2 /* DBCameraFiltersView.m */; };
-		032DA0AA2069372E00D22CE2 /* DBCameraLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA07E2069372D00D22CE2 /* DBCameraLoadingView.m */; };
-		032DA0AB2069372E00D22CE2 /* DBCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA07F2069372D00D22CE2 /* DBCameraView.m */; };
-		032DA0AC2069372E00D22CE2 /* DBCameraGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0822069372D00D22CE2 /* DBCameraGridView.m */; };
-		032DA0AD2069372E00D22CE2 /* DBCameraCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0842069372D00D22CE2 /* DBCameraCropView.m */; };
-		032DA0AE2069372E00D22CE2 /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0892069372D00D22CE2 /* UIImage+Bundle.m */; };
-		032DA0AF2069372E00D22CE2 /* UIImage+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA08A2069372D00D22CE2 /* UIImage+TintColor.m */; };
-		032DA0B02069372E00D22CE2 /* UIImage+Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA08B2069372D00D22CE2 /* UIImage+Asset.m */; };
-		032DA0B12069372E00D22CE2 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA08D2069372D00D22CE2 /* UIImage+Crop.m */; };
-		032DA0B22069372E00D22CE2 /* UIViewController+UIViewController_FullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0902069372D00D22CE2 /* UIViewController+UIViewController_FullScreen.m */; };
+		032962C1207D18CC00A08EE6 /* Valencia.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0329627B207D18CC00A08EE6 /* Valencia.acv */; };
+		032962C2207D18CC00A08EE6 /* Vignette.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0329627C207D18CC00A08EE6 /* Vignette.acv */; };
+		032962C3207D18CC00A08EE6 /* Nashville.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0329627D207D18CC00A08EE6 /* Nashville.acv */; };
+		032962C4207D18CC00A08EE6 /* GrayscaleContrastFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329627E207D18CC00A08EE6 /* GrayscaleContrastFilter.m */; };
+		032962C5207D18CC00A08EE6 /* Hudson.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0329627F207D18CC00A08EE6 /* Hudson.acv */; };
+		032962C6207D18CC00A08EE6 /* amaro.acv in Resources */ = {isa = PBXBuildFile; fileRef = 03296280207D18CC00A08EE6 /* amaro.acv */; };
+		032962C7207D18CC00A08EE6 /* 1977.acv in Resources */ = {isa = PBXBuildFile; fileRef = 03296281207D18CC00A08EE6 /* 1977.acv */; };
+		032962C8207D18CC00A08EE6 /* mayfair.acv in Resources */ = {isa = PBXBuildFile; fileRef = 03296282207D18CC00A08EE6 /* mayfair.acv */; };
+		032962C9207D18CC00A08EE6 /* DBCamera.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03296285207D18CC00A08EE6 /* DBCamera.bundle */; };
+		032962CA207D18CC00A08EE6 /* DBCameraImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03296287207D18CC00A08EE6 /* DBCameraImages.xcassets */; };
+		032962CB207D18CC00A08EE6 /* DBLibraryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329628A207D18CC00A08EE6 /* DBLibraryManager.m */; };
+		032962CC207D18CC00A08EE6 /* DBCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329628B207D18CC00A08EE6 /* DBCameraManager.m */; };
+		032962CD207D18CC00A08EE6 /* DBCameraConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 03296290207D18CC00A08EE6 /* DBCameraConfiguration.m */; };
+		032962CE207D18CC00A08EE6 /* DBCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 03296291207D18CC00A08EE6 /* DBCollectionViewFlowLayout.m */; };
+		032962CF207D18CC00A08EE6 /* DBCameraFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03296292207D18CC00A08EE6 /* DBCameraFilterCell.m */; };
+		032962D0207D18CC00A08EE6 /* DBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03296293207D18CC00A08EE6 /* DBCollectionViewCell.m */; };
+		032962D1207D18CC00A08EE6 /* DBMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03296295207D18CC00A08EE6 /* DBMotionManager.m */; };
+		032962D2207D18CC00A08EE6 /* DBCameraContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0329629E207D18CC00A08EE6 /* DBCameraContainerViewController.m */; };
+		032962D3207D18CC00A08EE6 /* DBCameraCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962A0207D18CC00A08EE6 /* DBCameraCollectionViewController.m */; };
+		032962D4207D18CC00A08EE6 /* DBCameraLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962A4207D18CC00A08EE6 /* DBCameraLibraryViewController.m */; };
+		032962D5207D18CC00A08EE6 /* DBCameraSegueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962A7207D18CC00A08EE6 /* DBCameraSegueViewController.m */; };
+		032962D6207D18CC00A08EE6 /* DBCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962A8207D18CC00A08EE6 /* DBCameraViewController.m */; };
+		032962D7207D18CC00A08EE6 /* DBCameraBaseCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962A9207D18CC00A08EE6 /* DBCameraBaseCropViewController.m */; };
+		032962D8207D18CC00A08EE6 /* DBCameraFiltersView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962AB207D18CC00A08EE6 /* DBCameraFiltersView.m */; };
+		032962D9207D18CC00A08EE6 /* DBCameraLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962AD207D18CC00A08EE6 /* DBCameraLoadingView.m */; };
+		032962DA207D18CC00A08EE6 /* DBCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962AE207D18CC00A08EE6 /* DBCameraView.m */; };
+		032962DB207D18CC00A08EE6 /* DBCameraGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962B1207D18CC00A08EE6 /* DBCameraGridView.m */; };
+		032962DC207D18CC00A08EE6 /* DBCameraCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962B3207D18CC00A08EE6 /* DBCameraCropView.m */; };
+		032962DD207D18CC00A08EE6 /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962B8207D18CC00A08EE6 /* UIImage+Bundle.m */; };
+		032962DE207D18CC00A08EE6 /* UIImage+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962B9207D18CC00A08EE6 /* UIImage+TintColor.m */; };
+		032962DF207D18CC00A08EE6 /* UIImage+Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962BA207D18CC00A08EE6 /* UIImage+Asset.m */; };
+		032962E0207D18CC00A08EE6 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962BC207D18CC00A08EE6 /* UIImage+Crop.m */; };
+		032962E1207D18CC00A08EE6 /* UIViewController+UIViewController_FullScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 032962BF207D18CC00A08EE6 /* UIViewController+UIViewController_FullScreen.m */; };
 		032DA0B72069380E00D22CE2 /* CustomCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0B52069380E00D22CE2 /* CustomCamera.m */; };
 		032DA0B82069380F00D22CE2 /* DemoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032DA0B62069380E00D22CE2 /* DemoNavigationController.m */; };
 		033541D11F2B6391003ED6A7 /* CommonRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 033541D01F2B6391003ED6A7 /* CommonRequest.m */; };
@@ -261,68 +261,68 @@
 		0327AFDB1EEE6B74009F3191 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0327AFDD1EEE879C009F3191 /* StartQuickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartQuickViewController.h; path = Tabbar/HomeViewController/StartQuickCheck/StartQuickViewController.h; sourceTree = "<group>"; };
 		0327AFDE1EEE879C009F3191 /* StartQuickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartQuickViewController.m; path = Tabbar/HomeViewController/StartQuickCheck/StartQuickViewController.m; sourceTree = "<group>"; };
-		032DA04C2069372D00D22CE2 /* Valencia.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Valencia.acv; sourceTree = "<group>"; };
-		032DA04D2069372D00D22CE2 /* Vignette.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vignette.acv; sourceTree = "<group>"; };
-		032DA04E2069372D00D22CE2 /* Nashville.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nashville.acv; sourceTree = "<group>"; };
-		032DA04F2069372D00D22CE2 /* GrayscaleContrastFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayscaleContrastFilter.m; sourceTree = "<group>"; };
-		032DA0502069372D00D22CE2 /* Hudson.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hudson.acv; sourceTree = "<group>"; };
-		032DA0512069372D00D22CE2 /* amaro.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = amaro.acv; sourceTree = "<group>"; };
-		032DA0522069372D00D22CE2 /* 1977.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1977.acv; sourceTree = "<group>"; };
-		032DA0532069372D00D22CE2 /* mayfair.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = mayfair.acv; sourceTree = "<group>"; };
-		032DA0542069372D00D22CE2 /* GrayscaleContrastFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayscaleContrastFilter.h; sourceTree = "<group>"; };
-		032DA0562069372D00D22CE2 /* DBCamera.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DBCamera.bundle; sourceTree = "<group>"; };
-		032DA0582069372D00D22CE2 /* DBCameraImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DBCameraImages.xcassets; sourceTree = "<group>"; };
-		032DA05A2069372D00D22CE2 /* DBCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraManager.h; sourceTree = "<group>"; };
-		032DA05B2069372D00D22CE2 /* DBLibraryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLibraryManager.m; sourceTree = "<group>"; };
-		032DA05C2069372D00D22CE2 /* DBCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraManager.m; sourceTree = "<group>"; };
-		032DA05D2069372D00D22CE2 /* DBLibraryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLibraryManager.h; sourceTree = "<group>"; };
-		032DA05F2069372D00D22CE2 /* DBCameraControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraControllerProtocol.h; sourceTree = "<group>"; };
-		032DA0602069372D00D22CE2 /* DBMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMotionManager.h; sourceTree = "<group>"; };
-		032DA0612069372D00D22CE2 /* DBCameraConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraConfiguration.m; sourceTree = "<group>"; };
-		032DA0622069372D00D22CE2 /* DBCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCollectionViewFlowLayout.m; sourceTree = "<group>"; };
-		032DA0632069372D00D22CE2 /* DBCameraFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraFilterCell.m; sourceTree = "<group>"; };
-		032DA0642069372D00D22CE2 /* DBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCollectionViewCell.m; sourceTree = "<group>"; };
-		032DA0652069372D00D22CE2 /* DBCameraConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraConfiguration.h; sourceTree = "<group>"; };
-		032DA0662069372D00D22CE2 /* DBMotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMotionManager.m; sourceTree = "<group>"; };
-		032DA0672069372D00D22CE2 /* DBCameraFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraFilterCell.h; sourceTree = "<group>"; };
-		032DA0682069372D00D22CE2 /* DBPhotoProcessingControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPhotoProcessingControllerProtocol.h; sourceTree = "<group>"; };
-		032DA0692069372D00D22CE2 /* DBCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		032DA06A2069372D00D22CE2 /* DBCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCollectionViewCell.h; sourceTree = "<group>"; };
-		032DA06C2069372D00D22CE2 /* DBCameraMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraMacros.h; sourceTree = "<group>"; };
-		032DA06D2069372D00D22CE2 /* DBCameraDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraDelegate.h; sourceTree = "<group>"; };
-		032DA06F2069372D00D22CE2 /* DBCameraContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraContainerViewController.m; sourceTree = "<group>"; };
-		032DA0702069372D00D22CE2 /* DBCameraLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraLibraryViewController.h; sourceTree = "<group>"; };
-		032DA0712069372D00D22CE2 /* DBCameraCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraCollectionViewController.m; sourceTree = "<group>"; };
-		032DA0722069372D00D22CE2 /* DBCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraViewController.h; sourceTree = "<group>"; };
-		032DA0732069372D00D22CE2 /* DBCameraSegueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraSegueViewController.h; sourceTree = "<group>"; };
-		032DA0742069372D00D22CE2 /* DBCameraBaseCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraBaseCropViewController.h; sourceTree = "<group>"; };
-		032DA0752069372D00D22CE2 /* DBCameraLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraLibraryViewController.m; sourceTree = "<group>"; };
-		032DA0762069372D00D22CE2 /* DBCameraContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraContainerViewController.h; sourceTree = "<group>"; };
-		032DA0772069372D00D22CE2 /* DBCameraCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraCollectionViewController.h; sourceTree = "<group>"; };
-		032DA0782069372D00D22CE2 /* DBCameraSegueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraSegueViewController.m; sourceTree = "<group>"; };
-		032DA0792069372D00D22CE2 /* DBCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraViewController.m; sourceTree = "<group>"; };
-		032DA07A2069372D00D22CE2 /* DBCameraBaseCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraBaseCropViewController.m; sourceTree = "<group>"; };
-		032DA07C2069372D00D22CE2 /* DBCameraFiltersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraFiltersView.m; sourceTree = "<group>"; };
-		032DA07D2069372D00D22CE2 /* DBCameraGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraGridView.h; sourceTree = "<group>"; };
-		032DA07E2069372D00D22CE2 /* DBCameraLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraLoadingView.m; sourceTree = "<group>"; };
-		032DA07F2069372D00D22CE2 /* DBCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraView.m; sourceTree = "<group>"; };
-		032DA0802069372D00D22CE2 /* DBCameraCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraCropView.h; sourceTree = "<group>"; };
-		032DA0812069372D00D22CE2 /* DBCameraFiltersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraFiltersView.h; sourceTree = "<group>"; };
-		032DA0822069372D00D22CE2 /* DBCameraGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraGridView.m; sourceTree = "<group>"; };
-		032DA0832069372D00D22CE2 /* DBCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraView.h; sourceTree = "<group>"; };
-		032DA0842069372D00D22CE2 /* DBCameraCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraCropView.m; sourceTree = "<group>"; };
-		032DA0852069372D00D22CE2 /* DBCameraLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraLoadingView.h; sourceTree = "<group>"; };
-		032DA0872069372D00D22CE2 /* DBCameraBaseCropViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DBCameraBaseCropViewController+Private.h"; sourceTree = "<group>"; };
-		032DA0882069372D00D22CE2 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
-		032DA0892069372D00D22CE2 /* UIImage+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bundle.m"; sourceTree = "<group>"; };
-		032DA08A2069372D00D22CE2 /* UIImage+TintColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TintColor.m"; sourceTree = "<group>"; };
-		032DA08B2069372D00D22CE2 /* UIImage+Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Asset.m"; sourceTree = "<group>"; };
-		032DA08C2069372D00D22CE2 /* UIViewController+UIViewController_FullScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIViewController_FullScreen.h"; sourceTree = "<group>"; };
-		032DA08D2069372D00D22CE2 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
-		032DA08E2069372D00D22CE2 /* UIImage+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bundle.h"; sourceTree = "<group>"; };
-		032DA08F2069372D00D22CE2 /* UIImage+TintColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TintColor.h"; sourceTree = "<group>"; };
-		032DA0902069372D00D22CE2 /* UIViewController+UIViewController_FullScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIViewController_FullScreen.m"; sourceTree = "<group>"; };
-		032DA0912069372D00D22CE2 /* UIImage+Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Asset.h"; sourceTree = "<group>"; };
+		0329627B207D18CC00A08EE6 /* Valencia.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Valencia.acv; sourceTree = "<group>"; };
+		0329627C207D18CC00A08EE6 /* Vignette.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vignette.acv; sourceTree = "<group>"; };
+		0329627D207D18CC00A08EE6 /* Nashville.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nashville.acv; sourceTree = "<group>"; };
+		0329627E207D18CC00A08EE6 /* GrayscaleContrastFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrayscaleContrastFilter.m; sourceTree = "<group>"; };
+		0329627F207D18CC00A08EE6 /* Hudson.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hudson.acv; sourceTree = "<group>"; };
+		03296280207D18CC00A08EE6 /* amaro.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = amaro.acv; sourceTree = "<group>"; };
+		03296281207D18CC00A08EE6 /* 1977.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1977.acv; sourceTree = "<group>"; };
+		03296282207D18CC00A08EE6 /* mayfair.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = mayfair.acv; sourceTree = "<group>"; };
+		03296283207D18CC00A08EE6 /* GrayscaleContrastFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrayscaleContrastFilter.h; sourceTree = "<group>"; };
+		03296285207D18CC00A08EE6 /* DBCamera.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DBCamera.bundle; sourceTree = "<group>"; };
+		03296287207D18CC00A08EE6 /* DBCameraImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = DBCameraImages.xcassets; sourceTree = "<group>"; };
+		03296289207D18CC00A08EE6 /* DBCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraManager.h; sourceTree = "<group>"; };
+		0329628A207D18CC00A08EE6 /* DBLibraryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLibraryManager.m; sourceTree = "<group>"; };
+		0329628B207D18CC00A08EE6 /* DBCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraManager.m; sourceTree = "<group>"; };
+		0329628C207D18CC00A08EE6 /* DBLibraryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLibraryManager.h; sourceTree = "<group>"; };
+		0329628E207D18CC00A08EE6 /* DBCameraControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraControllerProtocol.h; sourceTree = "<group>"; };
+		0329628F207D18CC00A08EE6 /* DBMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBMotionManager.h; sourceTree = "<group>"; };
+		03296290207D18CC00A08EE6 /* DBCameraConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraConfiguration.m; sourceTree = "<group>"; };
+		03296291207D18CC00A08EE6 /* DBCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		03296292207D18CC00A08EE6 /* DBCameraFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraFilterCell.m; sourceTree = "<group>"; };
+		03296293207D18CC00A08EE6 /* DBCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCollectionViewCell.m; sourceTree = "<group>"; };
+		03296294207D18CC00A08EE6 /* DBCameraConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraConfiguration.h; sourceTree = "<group>"; };
+		03296295207D18CC00A08EE6 /* DBMotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBMotionManager.m; sourceTree = "<group>"; };
+		03296296207D18CC00A08EE6 /* DBCameraFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraFilterCell.h; sourceTree = "<group>"; };
+		03296297207D18CC00A08EE6 /* DBPhotoProcessingControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPhotoProcessingControllerProtocol.h; sourceTree = "<group>"; };
+		03296298207D18CC00A08EE6 /* DBCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		03296299207D18CC00A08EE6 /* DBCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCollectionViewCell.h; sourceTree = "<group>"; };
+		0329629B207D18CC00A08EE6 /* DBCameraMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraMacros.h; sourceTree = "<group>"; };
+		0329629C207D18CC00A08EE6 /* DBCameraDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraDelegate.h; sourceTree = "<group>"; };
+		0329629E207D18CC00A08EE6 /* DBCameraContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraContainerViewController.m; sourceTree = "<group>"; };
+		0329629F207D18CC00A08EE6 /* DBCameraLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraLibraryViewController.h; sourceTree = "<group>"; };
+		032962A0207D18CC00A08EE6 /* DBCameraCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraCollectionViewController.m; sourceTree = "<group>"; };
+		032962A1207D18CC00A08EE6 /* DBCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraViewController.h; sourceTree = "<group>"; };
+		032962A2207D18CC00A08EE6 /* DBCameraSegueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraSegueViewController.h; sourceTree = "<group>"; };
+		032962A3207D18CC00A08EE6 /* DBCameraBaseCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraBaseCropViewController.h; sourceTree = "<group>"; };
+		032962A4207D18CC00A08EE6 /* DBCameraLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraLibraryViewController.m; sourceTree = "<group>"; };
+		032962A5207D18CC00A08EE6 /* DBCameraContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraContainerViewController.h; sourceTree = "<group>"; };
+		032962A6207D18CC00A08EE6 /* DBCameraCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraCollectionViewController.h; sourceTree = "<group>"; };
+		032962A7207D18CC00A08EE6 /* DBCameraSegueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraSegueViewController.m; sourceTree = "<group>"; };
+		032962A8207D18CC00A08EE6 /* DBCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraViewController.m; sourceTree = "<group>"; };
+		032962A9207D18CC00A08EE6 /* DBCameraBaseCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraBaseCropViewController.m; sourceTree = "<group>"; };
+		032962AB207D18CC00A08EE6 /* DBCameraFiltersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraFiltersView.m; sourceTree = "<group>"; };
+		032962AC207D18CC00A08EE6 /* DBCameraGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraGridView.h; sourceTree = "<group>"; };
+		032962AD207D18CC00A08EE6 /* DBCameraLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraLoadingView.m; sourceTree = "<group>"; };
+		032962AE207D18CC00A08EE6 /* DBCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraView.m; sourceTree = "<group>"; };
+		032962AF207D18CC00A08EE6 /* DBCameraCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraCropView.h; sourceTree = "<group>"; };
+		032962B0207D18CC00A08EE6 /* DBCameraFiltersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraFiltersView.h; sourceTree = "<group>"; };
+		032962B1207D18CC00A08EE6 /* DBCameraGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraGridView.m; sourceTree = "<group>"; };
+		032962B2207D18CC00A08EE6 /* DBCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraView.h; sourceTree = "<group>"; };
+		032962B3207D18CC00A08EE6 /* DBCameraCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCameraCropView.m; sourceTree = "<group>"; };
+		032962B4207D18CC00A08EE6 /* DBCameraLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCameraLoadingView.h; sourceTree = "<group>"; };
+		032962B6207D18CC00A08EE6 /* DBCameraBaseCropViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DBCameraBaseCropViewController+Private.h"; sourceTree = "<group>"; };
+		032962B7207D18CC00A08EE6 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		032962B8207D18CC00A08EE6 /* UIImage+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bundle.m"; sourceTree = "<group>"; };
+		032962B9207D18CC00A08EE6 /* UIImage+TintColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TintColor.m"; sourceTree = "<group>"; };
+		032962BA207D18CC00A08EE6 /* UIImage+Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Asset.m"; sourceTree = "<group>"; };
+		032962BB207D18CC00A08EE6 /* UIViewController+UIViewController_FullScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIViewController_FullScreen.h"; sourceTree = "<group>"; };
+		032962BC207D18CC00A08EE6 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
+		032962BD207D18CC00A08EE6 /* UIImage+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bundle.h"; sourceTree = "<group>"; };
+		032962BE207D18CC00A08EE6 /* UIImage+TintColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TintColor.h"; sourceTree = "<group>"; };
+		032962BF207D18CC00A08EE6 /* UIViewController+UIViewController_FullScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIViewController_FullScreen.m"; sourceTree = "<group>"; };
+		032962C0207D18CC00A08EE6 /* UIImage+Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Asset.h"; sourceTree = "<group>"; };
 		032DA0B32069380C00D22CE2 /* DemoNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoNavigationController.h; sourceTree = "<group>"; };
 		032DA0B42069380D00D22CE2 /* CustomCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCamera.h; sourceTree = "<group>"; };
 		032DA0B52069380E00D22CE2 /* CustomCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCamera.m; sourceTree = "<group>"; };
@@ -680,7 +680,7 @@
 				032DA0B52069380E00D22CE2 /* CustomCamera.m */,
 				032DA0B32069380C00D22CE2 /* DemoNavigationController.h */,
 				032DA0B62069380E00D22CE2 /* DemoNavigationController.m */,
-				032DA04A2069372D00D22CE2 /* DBCamera */,
+				03296279207D18CC00A08EE6 /* DBCamera */,
 				1C7257B1203FDFF300DF1E2A /* Model */,
 				036255DF1F2713F100EBDFBC /* Ipay88 */,
 				037D83031EDFF82900638577 /* Fonts */,
@@ -810,143 +810,143 @@
 			name = StartQuickViewController;
 			sourceTree = "<group>";
 		};
-		032DA04A2069372D00D22CE2 /* DBCamera */ = {
+		03296279207D18CC00A08EE6 /* DBCamera */ = {
 			isa = PBXGroup;
 			children = (
-				032DA04B2069372D00D22CE2 /* Filters */,
-				032DA0552069372D00D22CE2 /* Localizations */,
-				032DA0572069372D00D22CE2 /* Resources */,
-				032DA0592069372D00D22CE2 /* Managers */,
-				032DA05E2069372D00D22CE2 /* Objects */,
-				032DA06B2069372D00D22CE2 /* Headers */,
-				032DA06E2069372D00D22CE2 /* Controllers */,
-				032DA07B2069372D00D22CE2 /* Views */,
-				032DA0862069372D00D22CE2 /* Categories */,
+				0329627A207D18CC00A08EE6 /* Filters */,
+				03296284207D18CC00A08EE6 /* Localizations */,
+				03296286207D18CC00A08EE6 /* Resources */,
+				03296288207D18CC00A08EE6 /* Managers */,
+				0329628D207D18CC00A08EE6 /* Objects */,
+				0329629A207D18CC00A08EE6 /* Headers */,
+				0329629D207D18CC00A08EE6 /* Controllers */,
+				032962AA207D18CC00A08EE6 /* Views */,
+				032962B5207D18CC00A08EE6 /* Categories */,
 			);
 			path = DBCamera;
 			sourceTree = "<group>";
 		};
-		032DA04B2069372D00D22CE2 /* Filters */ = {
+		0329627A207D18CC00A08EE6 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
-				032DA04C2069372D00D22CE2 /* Valencia.acv */,
-				032DA04D2069372D00D22CE2 /* Vignette.acv */,
-				032DA04E2069372D00D22CE2 /* Nashville.acv */,
-				032DA04F2069372D00D22CE2 /* GrayscaleContrastFilter.m */,
-				032DA0502069372D00D22CE2 /* Hudson.acv */,
-				032DA0512069372D00D22CE2 /* amaro.acv */,
-				032DA0522069372D00D22CE2 /* 1977.acv */,
-				032DA0532069372D00D22CE2 /* mayfair.acv */,
-				032DA0542069372D00D22CE2 /* GrayscaleContrastFilter.h */,
+				0329627B207D18CC00A08EE6 /* Valencia.acv */,
+				0329627C207D18CC00A08EE6 /* Vignette.acv */,
+				0329627D207D18CC00A08EE6 /* Nashville.acv */,
+				0329627E207D18CC00A08EE6 /* GrayscaleContrastFilter.m */,
+				0329627F207D18CC00A08EE6 /* Hudson.acv */,
+				03296280207D18CC00A08EE6 /* amaro.acv */,
+				03296281207D18CC00A08EE6 /* 1977.acv */,
+				03296282207D18CC00A08EE6 /* mayfair.acv */,
+				03296283207D18CC00A08EE6 /* GrayscaleContrastFilter.h */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
 		};
-		032DA0552069372D00D22CE2 /* Localizations */ = {
+		03296284207D18CC00A08EE6 /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
-				032DA0562069372D00D22CE2 /* DBCamera.bundle */,
+				03296285207D18CC00A08EE6 /* DBCamera.bundle */,
 			);
 			path = Localizations;
 			sourceTree = "<group>";
 		};
-		032DA0572069372D00D22CE2 /* Resources */ = {
+		03296286207D18CC00A08EE6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				032DA0582069372D00D22CE2 /* DBCameraImages.xcassets */,
+				03296287207D18CC00A08EE6 /* DBCameraImages.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		032DA0592069372D00D22CE2 /* Managers */ = {
+		03296288207D18CC00A08EE6 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				032DA05A2069372D00D22CE2 /* DBCameraManager.h */,
-				032DA05B2069372D00D22CE2 /* DBLibraryManager.m */,
-				032DA05C2069372D00D22CE2 /* DBCameraManager.m */,
-				032DA05D2069372D00D22CE2 /* DBLibraryManager.h */,
+				03296289207D18CC00A08EE6 /* DBCameraManager.h */,
+				0329628A207D18CC00A08EE6 /* DBLibraryManager.m */,
+				0329628B207D18CC00A08EE6 /* DBCameraManager.m */,
+				0329628C207D18CC00A08EE6 /* DBLibraryManager.h */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		032DA05E2069372D00D22CE2 /* Objects */ = {
+		0329628D207D18CC00A08EE6 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				032DA05F2069372D00D22CE2 /* DBCameraControllerProtocol.h */,
-				032DA0602069372D00D22CE2 /* DBMotionManager.h */,
-				032DA0612069372D00D22CE2 /* DBCameraConfiguration.m */,
-				032DA0622069372D00D22CE2 /* DBCollectionViewFlowLayout.m */,
-				032DA0632069372D00D22CE2 /* DBCameraFilterCell.m */,
-				032DA0642069372D00D22CE2 /* DBCollectionViewCell.m */,
-				032DA0652069372D00D22CE2 /* DBCameraConfiguration.h */,
-				032DA0662069372D00D22CE2 /* DBMotionManager.m */,
-				032DA0672069372D00D22CE2 /* DBCameraFilterCell.h */,
-				032DA0682069372D00D22CE2 /* DBPhotoProcessingControllerProtocol.h */,
-				032DA0692069372D00D22CE2 /* DBCollectionViewFlowLayout.h */,
-				032DA06A2069372D00D22CE2 /* DBCollectionViewCell.h */,
+				0329628E207D18CC00A08EE6 /* DBCameraControllerProtocol.h */,
+				0329628F207D18CC00A08EE6 /* DBMotionManager.h */,
+				03296290207D18CC00A08EE6 /* DBCameraConfiguration.m */,
+				03296291207D18CC00A08EE6 /* DBCollectionViewFlowLayout.m */,
+				03296292207D18CC00A08EE6 /* DBCameraFilterCell.m */,
+				03296293207D18CC00A08EE6 /* DBCollectionViewCell.m */,
+				03296294207D18CC00A08EE6 /* DBCameraConfiguration.h */,
+				03296295207D18CC00A08EE6 /* DBMotionManager.m */,
+				03296296207D18CC00A08EE6 /* DBCameraFilterCell.h */,
+				03296297207D18CC00A08EE6 /* DBPhotoProcessingControllerProtocol.h */,
+				03296298207D18CC00A08EE6 /* DBCollectionViewFlowLayout.h */,
+				03296299207D18CC00A08EE6 /* DBCollectionViewCell.h */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
 		};
-		032DA06B2069372D00D22CE2 /* Headers */ = {
+		0329629A207D18CC00A08EE6 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				032DA06C2069372D00D22CE2 /* DBCameraMacros.h */,
-				032DA06D2069372D00D22CE2 /* DBCameraDelegate.h */,
+				0329629B207D18CC00A08EE6 /* DBCameraMacros.h */,
+				0329629C207D18CC00A08EE6 /* DBCameraDelegate.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
 		};
-		032DA06E2069372D00D22CE2 /* Controllers */ = {
+		0329629D207D18CC00A08EE6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				032DA06F2069372D00D22CE2 /* DBCameraContainerViewController.m */,
-				032DA0702069372D00D22CE2 /* DBCameraLibraryViewController.h */,
-				032DA0712069372D00D22CE2 /* DBCameraCollectionViewController.m */,
-				032DA0722069372D00D22CE2 /* DBCameraViewController.h */,
-				032DA0732069372D00D22CE2 /* DBCameraSegueViewController.h */,
-				032DA0742069372D00D22CE2 /* DBCameraBaseCropViewController.h */,
-				032DA0752069372D00D22CE2 /* DBCameraLibraryViewController.m */,
-				032DA0762069372D00D22CE2 /* DBCameraContainerViewController.h */,
-				032DA0772069372D00D22CE2 /* DBCameraCollectionViewController.h */,
-				032DA0782069372D00D22CE2 /* DBCameraSegueViewController.m */,
-				032DA0792069372D00D22CE2 /* DBCameraViewController.m */,
-				032DA07A2069372D00D22CE2 /* DBCameraBaseCropViewController.m */,
+				0329629E207D18CC00A08EE6 /* DBCameraContainerViewController.m */,
+				0329629F207D18CC00A08EE6 /* DBCameraLibraryViewController.h */,
+				032962A0207D18CC00A08EE6 /* DBCameraCollectionViewController.m */,
+				032962A1207D18CC00A08EE6 /* DBCameraViewController.h */,
+				032962A2207D18CC00A08EE6 /* DBCameraSegueViewController.h */,
+				032962A3207D18CC00A08EE6 /* DBCameraBaseCropViewController.h */,
+				032962A4207D18CC00A08EE6 /* DBCameraLibraryViewController.m */,
+				032962A5207D18CC00A08EE6 /* DBCameraContainerViewController.h */,
+				032962A6207D18CC00A08EE6 /* DBCameraCollectionViewController.h */,
+				032962A7207D18CC00A08EE6 /* DBCameraSegueViewController.m */,
+				032962A8207D18CC00A08EE6 /* DBCameraViewController.m */,
+				032962A9207D18CC00A08EE6 /* DBCameraBaseCropViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		032DA07B2069372D00D22CE2 /* Views */ = {
+		032962AA207D18CC00A08EE6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				032DA07C2069372D00D22CE2 /* DBCameraFiltersView.m */,
-				032DA07D2069372D00D22CE2 /* DBCameraGridView.h */,
-				032DA07E2069372D00D22CE2 /* DBCameraLoadingView.m */,
-				032DA07F2069372D00D22CE2 /* DBCameraView.m */,
-				032DA0802069372D00D22CE2 /* DBCameraCropView.h */,
-				032DA0812069372D00D22CE2 /* DBCameraFiltersView.h */,
-				032DA0822069372D00D22CE2 /* DBCameraGridView.m */,
-				032DA0832069372D00D22CE2 /* DBCameraView.h */,
-				032DA0842069372D00D22CE2 /* DBCameraCropView.m */,
-				032DA0852069372D00D22CE2 /* DBCameraLoadingView.h */,
+				032962AB207D18CC00A08EE6 /* DBCameraFiltersView.m */,
+				032962AC207D18CC00A08EE6 /* DBCameraGridView.h */,
+				032962AD207D18CC00A08EE6 /* DBCameraLoadingView.m */,
+				032962AE207D18CC00A08EE6 /* DBCameraView.m */,
+				032962AF207D18CC00A08EE6 /* DBCameraCropView.h */,
+				032962B0207D18CC00A08EE6 /* DBCameraFiltersView.h */,
+				032962B1207D18CC00A08EE6 /* DBCameraGridView.m */,
+				032962B2207D18CC00A08EE6 /* DBCameraView.h */,
+				032962B3207D18CC00A08EE6 /* DBCameraCropView.m */,
+				032962B4207D18CC00A08EE6 /* DBCameraLoadingView.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		032DA0862069372D00D22CE2 /* Categories */ = {
+		032962B5207D18CC00A08EE6 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				032DA0872069372D00D22CE2 /* DBCameraBaseCropViewController+Private.h */,
-				032DA0882069372D00D22CE2 /* UIImage+Crop.h */,
-				032DA0892069372D00D22CE2 /* UIImage+Bundle.m */,
-				032DA08A2069372D00D22CE2 /* UIImage+TintColor.m */,
-				032DA08B2069372D00D22CE2 /* UIImage+Asset.m */,
-				032DA08C2069372D00D22CE2 /* UIViewController+UIViewController_FullScreen.h */,
-				032DA08D2069372D00D22CE2 /* UIImage+Crop.m */,
-				032DA08E2069372D00D22CE2 /* UIImage+Bundle.h */,
-				032DA08F2069372D00D22CE2 /* UIImage+TintColor.h */,
-				032DA0902069372D00D22CE2 /* UIViewController+UIViewController_FullScreen.m */,
-				032DA0912069372D00D22CE2 /* UIImage+Asset.h */,
+				032962B6207D18CC00A08EE6 /* DBCameraBaseCropViewController+Private.h */,
+				032962B7207D18CC00A08EE6 /* UIImage+Crop.h */,
+				032962B8207D18CC00A08EE6 /* UIImage+Bundle.m */,
+				032962B9207D18CC00A08EE6 /* UIImage+TintColor.m */,
+				032962BA207D18CC00A08EE6 /* UIImage+Asset.m */,
+				032962BB207D18CC00A08EE6 /* UIViewController+UIViewController_FullScreen.h */,
+				032962BC207D18CC00A08EE6 /* UIImage+Crop.m */,
+				032962BD207D18CC00A08EE6 /* UIImage+Bundle.h */,
+				032962BE207D18CC00A08EE6 /* UIImage+TintColor.h */,
+				032962BF207D18CC00A08EE6 /* UIViewController+UIViewController_FullScreen.m */,
+				032962C0207D18CC00A08EE6 /* UIImage+Asset.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1813,7 +1813,7 @@
 				037D82FE1EDFF81500638577 /* Roboto-Medium.ttf in Resources */,
 				03F9FA721ED44F9F008543D9 /* LaunchScreen.storyboard in Resources */,
 				03BF4D381EF138EA000A6666 /* TechExpertTableViewCell.xib in Resources */,
-				032DA09A2069372E00D22CE2 /* DBCamera.bundle in Resources */,
+				032962C9207D18CC00A08EE6 /* DBCamera.bundle in Resources */,
 				030DD7FC1ED8218400E1DDFD /* ImageTableViewCell.xib in Resources */,
 				033541D61F2EFF0B003ED6A7 /* MenuSecondTableViewCell.xib in Resources */,
 				03D3EB251F695DCC00F83A6F /* TipsHeaderCollectionReusableView.xib in Resources */,
@@ -1827,14 +1827,14 @@
 				037D83291EE5568300638577 /* PlansTableViewCell.xib in Resources */,
 				03BF4D231EF00517000A6666 /* ContactHeaderTableViewCell.xib in Resources */,
 				03F9FA6F1ED44F9F008543D9 /* Assets.xcassets in Resources */,
-				032DA09B2069372E00D22CE2 /* DBCameraImages.xcassets in Resources */,
+				032962CA207D18CC00A08EE6 /* DBCameraImages.xcassets in Resources */,
 				036255D71F262A1800EBDFBC /* Localizable.strings in Resources */,
 				037D830C1EE021C200638577 /* MyClaimDetailsTableViewCell.xib in Resources */,
 				0360F68B1F4AFA4700216A67 /* MuteChecker.caf in Resources */,
 				03C72DFC1EE68F42001493E1 /* DetailedTableViewCell.xib in Resources */,
 				1C7257B0203FDA3700DF1E2A /* PlanDetailViewController.xib in Resources */,
 				030482DB1EEA729000C8F0EC /* QuickCheckResultTableViewCell.xib in Resources */,
-				032DA0972069372E00D22CE2 /* amaro.acv in Resources */,
+				032962C6207D18CC00A08EE6 /* amaro.acv in Resources */,
 				03D3EB0F1F62D53400F83A6F /* SummaryScreenTableViewCell.xib in Resources */,
 				037D831F1EE182AD00638577 /* MenuTableViewCell.xib in Resources */,
 				037D82FC1EDFF81500638577 /* Roboto-Light.ttf in Resources */,
@@ -1842,26 +1842,26 @@
 				037D83351EE5688900638577 /* TipsCollectionViewCell.xib in Resources */,
 				1C7257C3203FFA2A00DF1E2A /* PlanButtonTableViewCell.xib in Resources */,
 				03FFAF871F57ABCB00CBCAB3 /* TextTableViewCell.xib in Resources */,
-				032DA0922069372E00D22CE2 /* Valencia.acv in Resources */,
-				032DA0982069372E00D22CE2 /* 1977.acv in Resources */,
+				032962C1207D18CC00A08EE6 /* Valencia.acv in Resources */,
+				032962C7207D18CC00A08EE6 /* 1977.acv in Resources */,
 				03D3EB061F62B70B00F83A6F /* ButtonTableViewCell.xib in Resources */,
 				030482CE1EE91C4B00C8F0EC /* PolicyHeaderTableViewCell.xib in Resources */,
 				037D832F1EE556E500638577 /* TipsForYouTableViewCell.xib in Resources */,
 				03B9165D1F34A4B30012C41E /* TipsDataCollectionViewCell.xib in Resources */,
 				0337C7E31FCE91FC00A2AF5A /* Disclaimer.html in Resources */,
-				032DA0992069372E00D22CE2 /* mayfair.acv in Resources */,
+				032962C8207D18CC00A08EE6 /* mayfair.acv in Resources */,
 				037D83191EE168F500638577 /* ScrollTableViewCell.xib in Resources */,
 				037D82FB1EDFF81500638577 /* Roboto-Italic.ttf in Resources */,
 				03C72E121EE6E3B2001493E1 /* BuyOptionTableViewCell.xib in Resources */,
 				037D82E91EDEE01200638577 /* MyActivitiesTableViewCell.xib in Resources */,
-				032DA0942069372E00D22CE2 /* Nashville.acv in Resources */,
+				032962C3207D18CC00A08EE6 /* Nashville.acv in Resources */,
 				037D82FA1EDFF81500638577 /* Roboto-BoldItalic.ttf in Resources */,
 				1C2E7EEE201EDE130042CE16 /* walkthrough.json in Resources */,
 				037D82F71EDFF81500638577 /* Roboto-Black.ttf in Resources */,
 				03BF4D3E1EF15E80000A6666 /* TechHeaderTableViewCell.xib in Resources */,
 				037D83011EDFF81500638577 /* Roboto-Thin.ttf in Resources */,
 				03C2B2851F82B8D900C674E3 /* FooterCollectionReusableView.xib in Resources */,
-				032DA0932069372E00D22CE2 /* Vignette.acv in Resources */,
+				032962C2207D18CC00A08EE6 /* Vignette.acv in Resources */,
 				037D82C71EDE944C00638577 /* ProfileParallaxHeaderView.xib in Resources */,
 				037D82F81EDFF81500638577 /* Roboto-BlackItalic.ttf in Resources */,
 				03F9FA6A1ED44F9F008543D9 /* Main.storyboard in Resources */,
@@ -1871,7 +1871,7 @@
 				03BF4D2F1EF11C99000A6666 /* ContactHeaderCell.xib in Resources */,
 				03FFAF811F57A64500CBCAB3 /* PolicyPriceTableViewCell.xib in Resources */,
 				1C2E7EEC201ED3490042CE16 /* WalkthroughCollectionViewCell.xib in Resources */,
-				032DA0962069372E00D22CE2 /* Hudson.acv in Resources */,
+				032962C5207D18CC00A08EE6 /* Hudson.acv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2109,73 +2109,75 @@
 			files = (
 				032DA0B72069380E00D22CE2 /* CustomCamera.m in Sources */,
 				03C72DF51EE68A19001493E1 /* DetailedHomeViewController.m in Sources */,
-				032DA0952069372E00D22CE2 /* GrayscaleContrastFilter.m in Sources */,
 				03C72DFB1EE68F42001493E1 /* DetailedTableViewCell.m in Sources */,
 				037D82CA1EDE948E00638577 /* ProfileParallaxHeaderView.m in Sources */,
-				032DA0A02069372E00D22CE2 /* DBCameraFilterCell.m in Sources */,
-				032DA0A62069372E00D22CE2 /* DBCameraSegueViewController.m in Sources */,
-				032DA0B02069372E00D22CE2 /* UIImage+Asset.m in Sources */,
 				1C5B450C2046B61A004A19D6 /* NSArray+RemoveNulls.m in Sources */,
 				030DD7EE1ED6B34000E1DDFD /* TermsViewController.m in Sources */,
 				1C7321E3204ECC9100567784 /* SplashViewController.m in Sources */,
+				032962D6207D18CC00A08EE6 /* DBCameraViewController.m in Sources */,
+				032962E1207D18CC00A08EE6 /* UIViewController+UIViewController_FullScreen.m in Sources */,
+				032962CB207D18CC00A08EE6 /* DBLibraryManager.m in Sources */,
 				03D3EB1D1F6422C600F83A6F /* SuccessViewControllerLost.m in Sources */,
 				03D3EB241F695DCC00F83A6F /* TipsHeaderCollectionReusableView.m in Sources */,
 				030F09451F1DF1D000EB4FE7 /* SuccessViewController.m in Sources */,
 				03D3EB0E1F62D53400F83A6F /* SummaryScreenTableViewCell.m in Sources */,
 				03BF4D281EF10B17000A6666 /* ContactUsSectionTableViewCell.m in Sources */,
 				1C2E7EFB201F17DF0042CE16 /* NSString_stripHtml.m in Sources */,
-				032DA0B22069372E00D22CE2 /* UIViewController+UIViewController_FullScreen.m in Sources */,
-				032DA0A72069372E00D22CE2 /* DBCameraViewController.m in Sources */,
-				032DA0A82069372E00D22CE2 /* DBCameraBaseCropViewController.m in Sources */,
 				1C7257C2203FFA2A00DF1E2A /* PlanButtonTableViewCell.m in Sources */,
 				037D83061EE0208D00638577 /* MyClaimsDetailsViewController.m in Sources */,
+				032962E0207D18CC00A08EE6 /* UIImage+Crop.m in Sources */,
 				03BF4D3D1EF15E80000A6666 /* TechHeaderTableViewCell.m in Sources */,
 				030482CD1EE91C4B00C8F0EC /* PolicyHeaderTableViewCell.m in Sources */,
 				037D82E31EDEDFE800638577 /* MyActivitiesViewController.m in Sources */,
 				037D82DB1EDED6A300638577 /* MyClaimsTableViewCell.m in Sources */,
 				037D830B1EE021C200638577 /* MyClaimDetailsTableViewCell.m in Sources */,
-				032DA0A52069372E00D22CE2 /* DBCameraLibraryViewController.m in Sources */,
-				032DA0AD2069372E00D22CE2 /* DBCameraCropView.m in Sources */,
 				030DD8011ED824A900E1DDFD /* TextFieldTableViewCell.m in Sources */,
-				032DA0A12069372E00D22CE2 /* DBCollectionViewCell.m in Sources */,
 				1C600B2B2020DBE200DA79C4 /* CustomNavigationViewController.m in Sources */,
 				1C600B3C2021854C00DA79C4 /* LoginViewController.m in Sources */,
+				032962D2207D18CC00A08EE6 /* DBCameraContainerViewController.m in Sources */,
 				037D83341EE5688900638577 /* TipsCollectionViewCell.m in Sources */,
+				032962CD207D18CC00A08EE6 /* DBCameraConfiguration.m in Sources */,
+				032962D3207D18CC00A08EE6 /* DBCameraCollectionViewController.m in Sources */,
 				1C7257B8203FEA2000DF1E2A /* PlanRequirementCell.m in Sources */,
 				03F9FA6D1ED44F9F008543D9 /* AMTrust.xcdatamodeld in Sources */,
 				03BF4D221EF00517000A6666 /* ContactHeaderTableViewCell.m in Sources */,
 				1C600B342021774D00DA79C4 /* WelcomeViewController.m in Sources */,
 				030DD7F21ED8006400E1DDFD /* EditProfileViewController.m in Sources */,
 				0360F6881F4AE7E600216A67 /* MuteChecker.m in Sources */,
+				032962C4207D18CC00A08EE6 /* GrayscaleContrastFilter.m in Sources */,
 				03D3EB141F62D9DD00F83A6F /* TermsAndConditionTableViewCell.m in Sources */,
 				037D82D61EDED58D00638577 /* MyClaimsViewController.m in Sources */,
+				032962DF207D18CC00A08EE6 /* UIImage+Asset.m in Sources */,
 				032DA0B82069380F00D22CE2 /* DemoNavigationController.m in Sources */,
 				03F9FAAE1ED46CB5008543D9 /* MoreViewController.m in Sources */,
+				032962D9207D18CC00A08EE6 /* DBCameraLoadingView.m in Sources */,
 				1C600B3F2021857E00DA79C4 /* CountrySelectionViewController.m in Sources */,
 				030482D61EEA704E00C8F0EC /* QuickCheckResultViewController.m in Sources */,
+				032962D1207D18CC00A08EE6 /* DBMotionManager.m in Sources */,
+				032962DE207D18CC00A08EE6 /* UIImage+TintColor.m in Sources */,
 				030DD7EA1ED6B17100E1DDFD /* RateViewController.m in Sources */,
+				032962DC207D18CC00A08EE6 /* DBCameraCropView.m in Sources */,
 				033541D51F2EFF0B003ED6A7 /* MenuSecondTableViewCell.m in Sources */,
+				032962D0207D18CC00A08EE6 /* DBCollectionViewCell.m in Sources */,
 				1C2E7EEB201ED3490042CE16 /* WalkthroughCollectionViewCell.m in Sources */,
+				032962D4207D18CC00A08EE6 /* DBCameraLibraryViewController.m in Sources */,
 				037D83181EE168F500638577 /* ScrollTableViewCell.m in Sources */,
 				030DD7FB1ED8218400E1DDFD /* ImageTableViewCell.m in Sources */,
 				037D82CE1EDEBED200638577 /* MyPlansViewController.m in Sources */,
 				03BF4D371EF138EA000A6666 /* TechExpertTableViewCell.m in Sources */,
+				032962DB207D18CC00A08EE6 /* DBCameraGridView.m in Sources */,
 				1C600B4320220E2600DA79C4 /* OnboardingViewController.m in Sources */,
 				03F9FA641ED44F9F008543D9 /* AppDelegate.m in Sources */,
-				032DA0AB2069372E00D22CE2 /* DBCameraView.m in Sources */,
 				03FFAF861F57ABCB00CBCAB3 /* TextTableViewCell.m in Sources */,
 				03D3EB001F62B64900F83A6F /* ChangePasswordViewController.m in Sources */,
 				037D832E1EE556E500638577 /* TipsForYouTableViewCell.m in Sources */,
 				03F9FAA01ED46BF2008543D9 /* ContactUsViewController.m in Sources */,
-				032DA09F2069372E00D22CE2 /* DBCollectionViewFlowLayout.m in Sources */,
 				037D831E1EE182AD00638577 /* MenuTableViewCell.m in Sources */,
-				032DA0AA2069372E00D22CE2 /* DBCameraLoadingView.m in Sources */,
 				03BF4D331EF1341B000A6666 /* TecExpertViewController.m in Sources */,
 				1C7257AF203FDA3700DF1E2A /* PlanDetailViewController.m in Sources */,
 				03F9FA611ED44F9F008543D9 /* main.m in Sources */,
+				032962CF207D18CC00A08EE6 /* DBCameraFilterCell.m in Sources */,
 				03B9165C1F34A4B30012C41E /* TipsDataCollectionViewCell.m in Sources */,
-				032DA09E2069372E00D22CE2 /* DBCameraConfiguration.m in Sources */,
-				032DA0A92069372E00D22CE2 /* DBCameraFiltersView.m in Sources */,
 				03BF4D2E1EF11C99000A6666 /* ContactHeaderCell.m in Sources */,
 				037D82E81EDEE01200638577 /* MyActivitiesTableViewCell.m in Sources */,
 				030482E51EEAB83700C8F0EC /* TestCollectionViewCell.m in Sources */,
@@ -2185,35 +2187,33 @@
 				030DD7E21ED6AD1900E1DDFD /* InviteFriendsViewController.m in Sources */,
 				1CDFE6132027BFAE003ECD49 /* FacebookViewController.m in Sources */,
 				03F4D4FC1EF288AD0076D7BC /* TechExpertNavigationViewController.m in Sources */,
-				032DA0AC2069372E00D22CE2 /* DBCameraGridView.m in Sources */,
 				03F4D4F81EF287910076D7BC /* TipsDetailsViewController.m in Sources */,
 				1C600B2E202153F600DA79C4 /* ProfileLoginViewController.m in Sources */,
 				1CDFE6102026F2BC003ECD49 /* WebViewController.m in Sources */,
 				03AE29FA1EF3A9C60082546C /* QuickTestResultViewController.m in Sources */,
 				030DD7DC1ED560DD00E1DDFD /* Helper.m in Sources */,
+				032962DD207D18CC00A08EE6 /* UIImage+Bundle.m in Sources */,
 				030482D21EE98AF400C8F0EC /* QuickCheckValidationViewController.m in Sources */,
 				037D83101EE04C4C00638577 /* SignUpViewController.m in Sources */,
-				032DA0B12069372E00D22CE2 /* UIImage+Crop.m in Sources */,
+				032962D5207D18CC00A08EE6 /* DBCameraSegueViewController.m in Sources */,
 				1C600B3820217BA600DA79C4 /* OTPViewController.m in Sources */,
 				030DD7E61ED6AD4B00E1DDFD /* MoreNavigationViewController.m in Sources */,
+				032962CE207D18CC00A08EE6 /* DBCollectionViewFlowLayout.m in Sources */,
 				030482E01EEAB7CE00C8F0EC /* QuickDiagonasisTestViewController.m in Sources */,
+				032962CC207D18CC00A08EE6 /* DBCameraManager.m in Sources */,
+				032962D7207D18CC00A08EE6 /* DBCameraBaseCropViewController.m in Sources */,
 				037D83281EE5568300638577 /* PlansTableViewCell.m in Sources */,
-				032DA0A22069372E00D22CE2 /* DBMotionManager.m in Sources */,
 				03D3EB091F62C55600F83A6F /* SummaryViewController.m in Sources */,
 				03F9FAA71ED46C69008543D9 /* HomeViewController.m in Sources */,
-				032DA0A32069372E00D22CE2 /* DBCameraContainerViewController.m in Sources */,
 				1C7257B4203FE01500DF1E2A /* PlanModel.m in Sources */,
+				032962D8207D18CC00A08EE6 /* DBCameraFiltersView.m in Sources */,
+				032962DA207D18CC00A08EE6 /* DBCameraView.m in Sources */,
 				030F09411F1DE88A00EB4FE7 /* TestDataCollectionViewController.m in Sources */,
-				032DA09D2069372E00D22CE2 /* DBCameraManager.m in Sources */,
 				038E2B521EF90ABC000209FD /* TouchViewController.m in Sources */,
 				03D3EB051F62B70B00F83A6F /* ButtonTableViewCell.m in Sources */,
-				032DA0AE2069372E00D22CE2 /* UIImage+Bundle.m in Sources */,
-				032DA09C2069372E00D22CE2 /* DBLibraryManager.m in Sources */,
-				032DA0A42069372E00D22CE2 /* DBCameraCollectionViewController.m in Sources */,
 				0327AFDF1EEE879C009F3191 /* StartQuickViewController.m in Sources */,
 				033541D11F2B6391003ED6A7 /* CommonRequest.m in Sources */,
 				037D82A81EDBEA6400638577 /* WalkthroughViewController.m in Sources */,
-				032DA0AF2069372E00D22CE2 /* UIImage+TintColor.m in Sources */,
 				037D82D21EDED0EE00638577 /* MyPlansCollectionViewCell.m in Sources */,
 				03EF4D841F6FE08400779F4A /* NotificationViewController.m in Sources */,
 				037D83231EE52EDE00638577 /* ForgotPasswordViewController.m in Sources */,

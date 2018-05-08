@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lblDetails;
 @property (weak, nonatomic) IBOutlet UIButton *btnScreen;
+@property (weak, nonatomic) IBOutlet UITextView *textVieWdetails;
 
 @end

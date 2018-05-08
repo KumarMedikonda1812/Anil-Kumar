@@ -147,12 +147,16 @@
         }
         if([[Helper sharedInstance] isLogin])
         {
-            cell.lblDetails.text = NSLocalizedStringFromTableInBundle([arrLoginDetails objectAtIndex:indexPath.section-1], nil, [[Helper sharedInstance] getLocalBundle], nil);
+           // cell.textVieWdetails.text = NSLocalizedStringFromTableInBundle([arrLoginDetails objectAtIndex:indexPath.section-1], nil, [[Helper sharedInstance] getLocalBundle], nil);
+            cell.textVieWdetails.text = NSLocalizedStringFromTableInBundle([arrLoginDetails objectAtIndex:indexPath.section-1], nil, [[Helper sharedInstance] getLocalBundle], nil);
+
 
         }
         else
         {
-            cell.lblDetails.text = NSLocalizedStringFromTableInBundle([details objectAtIndex:indexPath.section-1], nil, [[Helper sharedInstance] getLocalBundle], nil);
+           // cell.textLabel.text = NSLocalizedStringFromTableInBundle([details objectAtIndex:indexPath.section-1], nil, [[Helper sharedInstance] getLocalBundle], nil);
+            cell.textVieWdetails.text = NSLocalizedStringFromTableInBundle([details objectAtIndex:indexPath.section-1], nil, [[Helper sharedInstance] getLocalBundle], nil);
+
         }
         
         return cell;

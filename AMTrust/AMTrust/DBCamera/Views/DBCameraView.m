@@ -89,7 +89,7 @@
 
     [self.bottomContainerBar addSubview:self.triggerButton];
     [self.bottomContainerBar addSubview:self.closeButton];
-   // [self.bottomContainerBar addSubview:self.photoLibraryButton];
+    [self.bottomContainerBar addSubview:self.photoLibraryButton];
 
     [self createGesture];
 }
